@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<record id="sports_form_view" model="ir.ui.view">
+		<field name="name">college.sports.form</field>
+		<field name="model">college.sports</field>
+		<field name="arch" type="xml">
+			<form name="sports">
+				<sheet>
+					<group>
+						<group>
+							<field name="name"/>
+							<field name ="fees"/>
+						</group>
+				</group>
+				</sheet>
+			</form>
+		</field> 
+
+	</record>
+
+
+
+	<record id="action_college_sports" model="ir.actions.act_window">
+        <field name="name">College Management</field>
+        <field name="res_model">college.sports</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+	
+
+	   <menuitem id="menu_college"
+	   	name = "College Management"/>
+
+	   	<menuitem id="menu_sports"
+	   		name="Sports"
+	   		parent="menu_college"
+	   		action="college_management.action_college_sports"/>
+
+</odoo>

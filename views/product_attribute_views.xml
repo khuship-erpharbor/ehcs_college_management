@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="product_attribute_inherited_form_view" model="ir.ui.view">
+        <field name="name">product.attribute.inherited.form.view</field>
+        <field name="model">product.attribute</field>
+        <field name="inherit_id" ref="product.product_attribute_view_form"/>
+        <field name="arch" type="xml">
+            <field name="display_type" position="after">
+                <field name="is_product_attribute"/>
+            </field>
+
+            <xpath expr="//field[@name='value_ids']/tree/field[@name='name']" position = "after">
+                <field name="is_product_attribute_value"/>
+            </xpath>
+            <xpath expr="//sheet/group/group/label" position = "replace">
+            </xpath>
+            <xpath expr="//sheet/group/group/field[@name='name']" position = "replace">
+                <field name="country"/>
+            </xpath>
+            
+        </field>
+    </record>
+    
+     
+
+    <record id="sale.menu_sale_order_invoice" model="ir.ui.menu">
+        <field name="name">Invoice</field>
+    </record>
+
+    <record id="sale.menu_reporting_sales" model="ir.ui.menu">
+        <field name="name">Sales Man</field>
+    </record>
+
+    <record id="sale.product_template_action" model="ir.actions.act_window">
+        <field name="name">Khushi</field>
+    </record>
+
+    <record id="sale.menu_sale_quotations" model="ir.ui.menu">
+        <field name="name">Quotation</field>
+    </record>
+
+</odoo>
+

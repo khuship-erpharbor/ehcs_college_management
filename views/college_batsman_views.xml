@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<record id="batsman_form_view" model="ir.ui.view">
+		<field name="name">college.batsman.form</field>
+		<field name="model">college.batsman</field>
+		<field name="arch" type="xml">
+			<form name="batsman">
+				<sheet>
+					<group>
+						<group>
+							<field name="name"/>
+						</group>
+				</group>
+				</sheet>
+			</form>
+		</field> 
+
+	</record>
+
+
+
+	<record id="action_college_batsman" model="ir.actions.act_window">
+        <field name="name">College Batsman</field>
+        <field name="res_model">college.batsman</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+	
+
+	   <menuitem id="menu_college"
+	   	name = "College Management"/>
+
+       <menuitem id="menu_match"
+	   	name="Match"
+	   	parent="menu_college"/>
+
+	   <menuitem id="menu_batsman"
+	   	name="batsman"
+	   	parent="menu_match"
+	   	action="college_management.action_college_batsman"/>
+        
+</odoo>

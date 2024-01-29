@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	 <record id="sale_order_inherited_form_view" model="ir.ui.view">
+        <field name="name">sale.order.inherited.form.view</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <header>
+                <button name="action_check" string="Check" type="object" class="oe_highlight"/>
+            </header>
+        	<field name="payment_term_id" position="after">
+        		<field name="is_sale_order"/>
+        	</field>
+            <!-- own button in base -->
+            <field name="is_sale_order" position="after">
+                <field name="confirm"/>
+            </field>
+
+            <!--add field after specific field-->
+
+            <xpath expr="//field[@name='order_line']/tree/field[@name='name']" position = "after">
+                <field name="is_sale_order_line"/>
+            </xpath>
+
+            <!--remove shipping column full-->
+
+            <xpath expr="//page/group/group[@name='sale_shipping']" position = "replace">
+            </xpath>
+        </field>
+    </record>
+
+    <!-- inherit new menu -->
+
+    <menuitem id="menu_sale_student"
+        name="Student"
+        parent="sale.sale_order_menu"
+        sequence="30"
+        action="action_college_student"/>
+</odoo>
