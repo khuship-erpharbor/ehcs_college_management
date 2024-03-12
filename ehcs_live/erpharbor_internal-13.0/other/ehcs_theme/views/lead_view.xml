@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_harbor_crm_oppor_form" model="ir.ui.view">
+        <field name="name">harbor.crm.oppor</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.crm_lead_view_form"/>
+        <field name="arch" type="xml">
+            <page name="lead" position="before">
+                <page string="Requirement Details" name="requirement_details">
+                    <group>
+                        <group name="client_info" string="Client Details">
+                            <field name="company_name"/>
+                            <field name="company_website"/>
+                            <field name="skype"/>
+                        </group>
+                        <group name="project_detail" string="Project Details">
+                            <field name="requirement_ids" widget="many2many_tags"/>
+                            <field name="budjet_id"/>
+                        </group>
+                    </group>
+                </page>
+            </page>
+            <field name="phone" position="replace">
+                <label for="phone" string="Phone"/>
+                <div class="o_row mr16">
+                    <field name="phone"/>
+                </div>
+            </field>
+            
+            <field name="description" position="replace">
+                <group>
+	                <label for="description" string="Project Description"/>
+	                <div class="o_row mr16">
+	                    <field name="description"/>
+	                </div>
+                </group>
+            </field>
+            
+        </field>
+    </record>
+
+    <record id="view_project_requirement_form" model="ir.ui.view">
+            <field name="name">project.requirement.form</field>
+            <field name="model">project.requirement</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name"/>
+                            </group>
+                            <group></group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_project_requirement_tree" model="ir.ui.view">
+            <field name="name">project.requirement.tree</field>
+            <field name="model">project.requirement</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+        
+        <record id="action_project_requirement" model="ir.actions.act_window">
+            <field name="name">Project Requirements</field>
+            <field name="res_model">project.requirement</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem
+            id="menu_project_requirement"
+            name="Project Requirements"
+            action="action_project_requirement"
+            parent="crm.menu_crm_config_lead"/>
+
+</odoo>

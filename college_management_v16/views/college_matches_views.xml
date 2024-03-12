@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="college_matches_form_view" model="ir.ui.view">
+        <field name="name">college.matches.form</field>
+        <field name="model">college.matches</field>
+        <field name="arch" type="xml">
+            <form name="ipl_scoreboard">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="batsman_id"/>
+                            <field name="is_calculation"/>
+                            <button name="action_record" string="Show Record" type="object" class="oe_highlight"/>
+                        </group>
+                    </group>
+                </sheet>
+                <notebook>
+                    <page string="Scoreboard">
+                        <field name="matches_line_ids">
+                            <tree editable="bottom">
+                                <field name="opp_team"/>
+                                <field name="four" sum="four"/>
+                                <field name="six" sum ="six"/>
+                                <field name="over" sum="over"/>
+                                <field name="run" sum="run"/>
+                                <!--<field name="player_over"/>-->
+                            </tree>
+                            <form>
+                                <group>
+                                       <field name="opp_team"/>
+                                       <field name="four"/>
+                                       <field name="six"/>
+                                       <field name="over"/>
+                                       <field name="run"/>
+                                </group>
+                            </form>
+                        </field>
+                    </page>
+                </notebook>
+                <group>
+                    <field name="total"/>
+                </group> 
+            </form>
+        </field>
+    </record>
+
+    <record id="college_matches_tree_view" model="ir.ui.view">
+        <field name="name">college.matches.tree</field>
+        <field name="model">college.matches</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+            </tree>
+        </field>
+       </record>
+
+
+
+    
+    <record id="action_college_matches" model="ir.actions.act_window">
+        <field name="name">College Matches</field>
+        <field name="res_model">college.matches</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+     <record id="action_college_matches_line" model="ir.actions.act_window">
+        <field name="name">College Matches</field>
+        <field name="res_model">college.matches.line</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    
+
+       <menuitem id="menu_college"
+        name = "College Management"/>
+
+
+        <menuitem id="menu_match"
+            name="Match"
+            parent="menu_college"/>
+
+        <menuitem id="menu_matches"
+            name="Scoreboard"
+            parent="menu_match"
+            action="college_management.action_college_matches"/>
+
+</odoo>

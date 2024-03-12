@@ -1,1 +1,0 @@
-# ehcs_college_management

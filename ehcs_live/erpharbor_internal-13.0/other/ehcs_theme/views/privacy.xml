@@ -1,0 +1,109 @@
+<odoo>
+    <template id="theme_menu_privacy_page" name="website.privacy_page">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure oe_empty">
+                <section class="s_cover parallax bg-black-50 pb256 pt256 s_parallax_is_fixed" data-scroll-background-ratio="1" data-name="Cover" style="background-image: none;">
+                  <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url(&quot; ehcs_theme/static/src/img/Privacy.jpeg &quot;); background-position: 50% 0px;"/>
+                </section>
+                <section class="pb0 pt0 bg-100" data-name="Title">
+                  <div class="container">
+                    <div class="row s_nb_column_fixed">
+                      <div class="col-lg-12 s_title pt16 pb16" style="text-align: center;">
+                        <h1 class="s_title_default pb16 pt16">
+                          <font style="font-size: 36px;">
+                            <b>Privacy Policy</b>
+                          </font>
+                        </h1>
+                      </div>
+                    </div>
+                  <!-- </div>
+                </section>
+                <section class="s_text_block pb32 pt0 bg-100" data-name="Text block">
+                  <div class="container"> -->
+                    <div class="row">
+                      <div class="col-lg-12 pb0 pt16">
+                        <ul>
+                          <li>
+                            <p class="lead">  
+                              <b>
+                                <font style="font-size: 18px;">PRIVACY POLICY OF ERP HARBOR CONSULTING SERVICES AS PER I.T.ACT, 2000</font>
+                              </b>
+                            </p>
+                          </li>
+                        </ul>
+                        <p class="lead" style="text-align: justify; margin-left: 1.5em;">
+                          <span style="font-size: 14px;">The issue of online privacy is extremely crucial for ERP Harbor which is committed to safeguarding the information provided by its members and other visitors logging on to its Web site. As a business entity dedicated to offering professional Enterprise&amp;nbsp; &amp;nbsp;Software &amp;amp; Mobility Solutions and service in India and abroad, ERP Harbor has been actively promoting the concept of privacy and its relevance for organizations with a cyber-presence.</span>
+                        </p>
+                        <p class="lead" style="text-align: justify; margin-left: 1.5em;">
+                          <span style="font-size: 14px;">Respecting the privacy of its online visitors while providing top-of-the-line services to customers has remained the core of ERP Harbor’s strategy. Our Privacy Policy gives visitors a view of the privacy practices followed by ERP Harbor and assures them of safe passage through the organization’s Web site.</span>
+                        </p>
+                        <p class="lead" style="text-align: justify; margin-left: 1.5em;">
+                          <span style="font-size: 14px;">At the same time, ERP Harbor would like to make it clear that its site provides links to other Web sites that are governed by their Privacy Policies and does not take responsibility for the security provided by these sites. Visitors to the ERP Harbor site are urged to familiarize themselves with their respective Privacy Policies.</span>
+                        </p>
+                        <p class="lead" style="text-align: justify; margin-left: 1.5em;">
+                          <span style="font-size: 14px;">When you provide us with your data, you are agreeing to the rules and regulations stipulated under our Privacy Policy and are bound by it. If you do not agree to our Policy please do not use the Site.</span>
+                        </p>
+                        <div style="text-align: left;">
+                          <font style=""></font>
+                        </div>
+                        <ul>
+                          <li>
+                            <p>
+                              <b>
+                                <font style="font-size: 18px;">CHANGES TO THIS POLICY</font>
+                              </b>
+                            </p>
+                          </li>
+                        </ul>
+                        <p>&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;<span style="background-color: transparent; font-size: 14px;">The Company may update this Privacy policy from time to time. In any case of a significant change in the way personal information is used that is outlined in this&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;</span>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;<span style="background-color: transparent; font-size: 14px;">Privacy Policy to reflect changes to our information practices. We encourage you to periodically review this page for the latest information on our privacy practices.</span>
+                        </p>
+                        <ul>
+                          <li>
+                            <p>
+                              <b>
+                                <font style="font-size: 18px;">THE PRIVACY POLICY COVERS THE FOLLOWING AREAS</font>
+                              </b>
+                            </p>
+                          </li>
+                        </ul>
+                        <p>
+                          <font style="font-size: 14px;">&amp;nbsp; &amp;nbsp; &amp;nbsp;</font>&amp;nbsp; &amp;nbsp;<font style="font-size: 14px;"/>
+                        <span style="background-color: transparent; font-size: 14px;">Type of information collected through the Web site</span>
+                      </p>
+                      <p>&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;<font style="font-size: 14px;">Use and disclosure of personal information</font>
+                      </p>
+                      <p>&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;<font style="font-size: 14px;">Choice or Opt out</font>
+                      </p>
+                      <p>&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;<font style="font-size: 14px;">Security</font>
+                      </p>
+                      <ul>
+                        <li>
+                          <p>
+                            <font style="">
+                              <span style="font-size: 18px;">
+                                <b>CONTACT US</b>
+                                <b>
+                                  <br/>
+                                </b>
+                                <b/>
+                              </span>
+                            </font>
+                          </p>
+                        </li>
+                      </ul>
+                      <p>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;I<span data-preserver-spaces="true" style="background: transparent; font-size: 1rem; color: rgb(28, 30, 41); margin-top: 0pt; margin-bottom: 0pt;">f you have any questions or concerns regarding this Privacy Policy, the practices of this web site or your dealings with this web site, please contact </span>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;<span data-preserver-spaces="true" style="background: transparent; font-size: 1rem; color: rgb(28, 30, 41); margin-top: 0pt; margin-bottom: 0pt;">us&amp;nbsp;</span>
+                        <strong style="background: transparent; font-size: 1rem; color: rgb(28, 30, 41); margin-top: 0pt; margin-bottom: 0pt;">contact@erpharbor.com</strong>
+                      </p>
+                      <p>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;<b>Policy effective since March 15th,2018. </b>
+                      </p>
+                      <p>
+                        <br/>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+        </t>
+    </template>
+</odoo>

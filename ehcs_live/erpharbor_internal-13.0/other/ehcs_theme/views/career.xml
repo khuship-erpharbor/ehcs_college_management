@@ -1,0 +1,127 @@
+<odoo>
+    <template id="theme_menu_career_two" name="website.career_two">
+            <t t-call="website.layout">
+                <div id="wrap" class="oe_structure oe_empty">
+                <section class="s_text_block pt32 pb0" data-name="Text block">
+                    <div class="container">
+                    <div class="row">
+                        <div class="pt32 pb0 col-lg-9">
+                        <p class="lead" style="text-align: justify; ">
+                            <b>Join us and help disrupt the enterprise market..! </b>
+                            <br/>
+                        </p>
+                        <ul>
+                            <li>
+                            <p>
+                                <span style="color: rgb(51, 51, 51); font-family: Roboto, sans-serif; font-size: 18px;">Join us, we offer you an extraordinary chance to learn, to develop and to be part of an exciting experience and team. </span>
+                                <br/>
+                                <br/>
+                            </p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                            <p>
+                                <b>
+                                <font style="font-size: 24px;">Odoo Developer</font>
+                                </b>
+                            </p>
+                            </li>
+                            <li class="o_indent">
+                            <ul>
+                                <li>
+                                <p>
+                                    <span style="font-size: 18px;">We are hiring Freshers &amp;amp; experienced odoo developers for our highly growing enterprise IT solution provider company.</span>
+                                </p>
+                                <p>
+                                    <span style="font-size: 18px;">Qualification : MCA, BE(IT,CE),MSC(IT), ME, M.tech.&amp;nbsp;</span>
+                                </p>
+                                <p>
+                                    <span style="font-size: 18px;"/>
+                                </p>
+                                <p>
+                                    <span style="font-size: 18px;">Experience : 0 to 1 Year</span>
+                                    <br/>
+                                </p>
+                                </li>
+                                <li>
+                                <p>Send your updated resume: <b>contact@erpharbor.com</b><br/></p>
+                                </li>
+                            </ul>
+                            <p>
+                                <br/>
+                            </p>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+                
+                <form action="/website_form/" method="post" class="s_website_form container-fluid mt32 o_fake_not_editable" enctype="multipart/form-data" data-name="Form Builder" data-model_name="hr.applicant" data-success_page="/job-thank-you">
+                    <div class="container">
+                    <h1 class="o_form_heading">
+                        <font style="font-size: 48px;">Apply for a Job</font>
+                    </h1>
+                    <div class="row form-group form-field d-none">
+                        <div class="col-lg-3 col-md-4">
+                        <label class="col-form-label o_fake_editable" for="job_id">
+                                
+                            </label>
+                        </div>
+                        <div class="col-lg-7 col-md-8">
+                        <input type="text" class="form-control o_website_form_input" name="job_id" value="7"/>
+                        </div>
+                    </div>
+                    <div class="form-group row form-field o_website_form_required_custom o_fake_not_editable">
+                        <div class="col-lg-3 col-md-4">
+                        <label class="col-form-label o_fake_editable" for="partner_name">Your Name</label>
+                        </div>
+                        <div class="col-lg-7 col-md-8">
+                        <input type="text" class="form-control o_website_form_input" name="partner_name" required=""/>
+                        </div>
+                    </div>
+                    <div class="form-group row form-field o_website_form_required_custom o_fake_not_editable">
+                        <div class="col-lg-3 col-md-4">
+                        <label class="col-form-label o_fake_editable" for="email_from">Your Email</label>
+                        </div>
+                        <div class="col-lg-7 col-md-8">
+                        <input type="text" class="form-control o_website_form_input" name="email_from" required=""/>
+                        </div>
+                    </div>
+                    <div class="form-group row form-field o_website_form_required_custom">
+                        <div class="col-lg-3 col-md-4">
+                        <label class="col-form-label o_fake_editable" for="partner_phone">Phone Number</label>
+                        </div>
+                        <div class="col-lg-7 col-md-8">
+                        <input type="text" class="form-control o_website_form_input" name="partner_phone" required=""/>
+                        </div>
+                    </div>
+                    <div class="form-group row form-field">
+                        <div class="col-lg-3 col-md-4">
+                        <label class="col-form-label o_fake_editable" for="description">Short Introduction</label>
+                        </div>
+                        <div class="col-lg-7 col-md-8">
+                        <textarea class="form-control o_website_form_input" name="description"/>
+                        </div>
+                    </div>
+                    <div class="form-group row form-field o_website_form_custom">
+                        <div class="col-lg-3 col-md-4">
+                        <label class="col-form-label o_fake_editable" for="Resume">Resume</label>
+                        </div>
+                        <div class="col-lg-7 col-md-8">
+                        <input type="file" class="form-control o_website_form_input" name="Resume"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="offset-lg-3 offset-md-4 col-md-8 col-lg-7">
+                        <button class="btn btn-primary btn-lg o_website_form_send">Send</button>
+                        <span id="o_website_form_result"/>
+                        </div>
+                    </div>
+                    </div>
+                </form>
+                </div>
+            </t>
+    </template>
+</odoo>

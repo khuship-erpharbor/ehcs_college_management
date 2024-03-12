@@ -1,0 +1,116 @@
+<odoo>
+    <template id="theme_menu_events_two" name="website.events_two">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure oe_empty">
+            <section class="pb0 pt0 bg-100" data-name="Title" style="">
+                <div class="container">
+                <div class="row s_nb_column_fixed">
+                    <div class="col-lg-12 s_title pt0 pb16" style="text-align: center;">
+                    <h1 class="pb24 pt48 s_title_default">
+                        <font style="font-size: 36px;">
+                        <b>Events</b>
+                        </font>
+                    </h1>
+                    </div>
+                </div>
+                </div>
+            </section>
+            <section class="bg-200 pb48 pt32" data-name="Images Carousel" style="">
+                <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 pb72 pt8 bg-white-50" style="">
+                    <h3 style="text-align: center; " class="pb0 pt0">
+                        <b>
+                        <font style="font-size: 24px;">Event Title</font>
+                        </b>
+                    </h3>
+                    <ul>
+                        <li>
+                        <p>Use this building block to showcase your content with an image carousel. You can edit, add or remove images using the customize options.</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                        <p>
+                            <b>Decision Support Solutions to Drive Success in Healthcare</b>
+                        </p>
+                        </li>
+                    </ul>
+                    <p>&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;<span class="badge s_badge bg-100" data-name="Badge" style=""><span class="fa fa-1x fa-clock-o fa-fw" style="width: 1.28571em;"/>Date : 1 Jan 2019 , 10:30 AM</span><br/>&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;<span class="badge s_badge bg-100" data-name="Badge" style=""><span class="fa fa-1x fa-fw fa-user" style="width: 1.28571em;" data-original-title="" title="" aria-describedby="tooltip599604"/>by XYZ PERSON&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;</span><span style="font-size: 1rem;"><br/></span></p>
+                    </div>
+                    <div id="myCarousel1573197429152" class="s_images_carousel s_carousel s_col_no_bgcolor carousel col-lg-8 slide s_carousel_rounded" data-interval="3000" data-name="Carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel1573197429152" data-slide-to="0" class="active"/>
+                        <li data-target="#myCarousel1573197429152" data-slide-to="1"/>
+                        <li data-target="#myCarousel1573197429152" data-slide-to="2"/>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item bg-black-75 pt40 active" style="">
+                        <img class="img img-fluid" src="/ehcs_theme/static/src/img/one.jpg" alt="" data-original-title="" title="" aria-describedby="tooltip904753"/>
+                        <div class="carousel-caption">
+                            <span class="o_default_snippet_text">A <b class="o_default_snippet_text">caption</b> for this image</span>
+                        </div>
+                        </div>
+                        <div class="carousel-item" style="">
+                        <img class="img img-fluid" src="/ehcs_theme/static/src/img/two.jpg" alt="" data-original-title="" title="" aria-describedby="tooltip481900"/>
+                        <div class="carousel-caption">
+                            <span class="o_default_snippet_text">A <b class="o_default_snippet_text">caption</b> for this image</span>
+                        </div>
+                        </div>
+                        <div class="carousel-item" style="">
+                        <img class="img img-fluid" src="/ehcs_theme/static/src/img/three.jpg" alt="" data-original-title="" title="" aria-describedby="tooltip481900"/>
+                        <div class="carousel-caption">
+                            <span class="o_default_snippet_text">A <b class="o_default_snippet_text">caption</b> for this image</span>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="carousel-control-prev" data-target="#myCarousel1573197429152" data-slide="prev" role="img" aria-label="Previous" title="Previous">
+                        <span class="carousel-control-prev-icon"/>
+                        <span class="sr-only o_default_snippet_text">Previous</span>
+                    </div>
+                    <div class="carousel-control-next" data-target="#myCarousel1573197429152" data-slide="next" role="img" aria-label="Next" title="Next">
+                        <span class="carousel-control-next-icon"/>
+                        <span class="sr-only o_default_snippet_text">Next</span>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+            <section class="o_gallery s_image_gallery o_fake_not_editable o_spc-medium o_slideshow pb32 bg-100 pt48" data-columns="3" style="overflow: hidden; height: 504px;" data-name="Image Gallery">
+                <div class="container">
+                <div id="slideshow_1573199949353" class="carousel slide" data-ride="carousel" data-interval="2000" style="margin: 0 12px;">
+                    <div class="carousel-inner" style="padding: 0;">
+                    <div class="carousel-item" style="">
+                        <img class="img img-fluid d-block rounded" src="/ehcs_theme/static/src/img/three.jpg" alt="Slide image" data-index="0"/>
+                    </div>
+                    <div class="carousel-item active" style="">
+                        <img class="img img-fluid d-block rounded" src="/ehcs_theme/static/src/img/two.jpg" alt="Slide image" data-index="1"/>
+                    </div>
+                    <div class="carousel-item" style="">
+                        <img class="img img-fluid d-block rounded" src="/ehcs_theme/static/src/img/one.jpg" alt="Slide image" data-index="2"/>
+                    </div>
+                    </div>
+                    <ul class="carousel-indicators">
+                    <li class="o_indicators_left text-center pt-2" aria-label="Previous" title="Previous">
+                        <i class="fa fa-chevron-left"/>
+                    </li>
+                    <!-- <li data-target="#slideshow_1573199949353" data-slide-to="0" style="background-image: url(/web/image/921/adventure-balance-balanced-7640.jpg)"/>
+                    <li data-target="#slideshow_1573199949353" data-slide-to="1" class="false active" style="background-image: url(/web/image/920/adult-backlit-beach-1000445.jpg)"/>
+                    <li data-target="#slideshow_1573199949353" data-slide-to="2" class="false" style="background-image: url(/web/image/922/beach-footprint-salt-water-5342.jpg)"/> -->
+                    <li class="o_indicators_right text-center pt-2" aria-label="Next" title="Next">
+                        <i class="fa fa-chevron-right"/>
+                    </li>
+                    </ul>
+                    <a class="carousel-control-prev text-black" href="#slideshow_1573199949353" data-slide="prev" aria-label="Previous" title="Previous">
+                    <span class="fa fa-chevron-left"/>
+                    </a>
+                    <a class="carousel-control-next text-black" href="#slideshow_1573199949353" data-slide="next" aria-label="Next" title="Next">
+                    <span class="fa fa-chevron-right"/>
+                    </a>
+                </div>
+                </div>
+            </section>
+            </div>
+        </t>
+    </template>
+</odoo>

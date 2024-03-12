@@ -1,0 +1,184 @@
+<odoo>
+    <template id="theme_menu_hire-resources_two" name="website.hire-resources_two">
+            <t t-call="website.layout">
+                <div id="wrap" class="oe_structure oe_empty">
+                    <section style="" data-name="Title" class="pt32 pb32 bg-100">
+                        <div class="container">
+                            <div class="row s_nb_column_fixed">
+                                <div style="text-align: center;" class="col-lg-12 s_title pt16 pb0">
+                                    <h1 class="s_title_default">
+                                        <font style="font-size: 36px;">
+                                            <b>Our Working Process</b>
+                                        </font>
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section data-name="Text - Image" class="s_text_image pt0 pb0 bg-100">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="pt16 col-lg-11 pb64">
+                                    <img aria-describedby="tooltip300072" title="" data-original-title="" alt="Odoo • Text and Image" class="img img-fluid mx-auto rounded rounded-circle" src="/ehcs_theme/static/src/img/flow.png" style=""/>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section data-name="Title" class="pb0 pt0 bg-100" style="">
+                        <div class="container">
+                            <div class="row s_nb_column_fixed">
+                                <div style="text-align: center;" class="col-lg-12 s_title pt16 pb0">
+                                    <h1 class="s_title_default">
+                                        <font style="font-size: 36px;">
+                                            <b>Hiring Model</b>
+                                        </font>
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section data-name="Text block" class="s_text_block pt0 pb0 bg-100" style="">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12 pb0 pt32 bg-100" style="">
+                                    <ul>
+                                        <li>
+                                            <p style="text-align: left;" class="lead">While implementing any system or developing for any clients it will be costly &amp;amp; time consuming to hire a resource on the payroll who have actual expertise to get the job rightly done.</p>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <p style="text-align: left;" class="lead">So at ERP harbor consulting services, we have following hiring models through which you can hire professional developers, with expertise &amp;amp; good experience in Odoo. Developer/team works as per your requirements within the time frame &amp;amp; timezone that is favorable to you.<br/>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                    <p style="text-align: center;">
+                                        <b>&amp;nbsp;</b>
+                                        <span style="font-size: 20px; background-color: transparent;">&amp;nbsp;</span>
+                                        <br/>
+                                    </p>
+                                </div>
+                                <div data-name="Box" class="col-lg-4 s_col_no_bgcolor text-center pb0 pt16 hvr-float-shadow">
+                                    <div style="background-color: rgb(148, 189, 123);" class="card ">
+                                        <h4 class="card-header">
+                                            <font style="font-size: 24px;">
+                                                <b>Part Time Hiring</b>
+                                            </font>
+                                        </h4>
+                                        <div class="card-body">
+                                            <h2 class="card-title pt0"/>
+                                            <p style="text-align: center; font-size: 16px;">
+                                                <i>
+                                                    <font style="font-size: 18px;">4 Hours per day</font>
+                                                </i>
+                                            </p>
+                                            <p style="text-align: center; font-size: 16px;">
+                                                <i>
+                                                    <font style="font-size: 18px;">5 Day per week</font>
+                                                </i>
+                                            </p>
+                                            <p style="text-align: center; font-size: 16px;">
+                                                <i>
+                                                    <font style="font-size: 18px;">Total hours = 88</font>
+                                                </i>
+                                            </p>
+                                            <p style="text-align: center; font-size: 16px;">
+                                                <i>
+                                                    <font style="font-size: 18px;">&amp;nbsp;Billing: Monthly Basis</font>
+                                                </i>
+                                            </p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <p>
+                                                <i>
+                                                    <b>
+                                                        <font style="font-size: 18px;">Working Hours</font>
+                                                    </b>
+                                                </i>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-name="Box" class="col-lg-4 s_col_no_bgcolor text-center pb0 pt16 hvr-float-shadow">
+                                    <div style="background-color: rgb(115, 165, 173);" class="card">
+                                        <h4 class="card-header pb16 pt8">
+                                            <font style="font-size: 24px;">
+                                                <b>Hourly Hiring</b>
+                                            </font>
+                                        </h4>
+                                        <div class="card-body text-center">
+                                            <h2 class="card-title pt0"/>
+                                            <p style="text-align: left; font-size: 16px;">
+                                                <i>
+                                                    <font style="font-size: 18px;">&amp;nbsp;</font>
+                                                </i>
+                                            </p>
+                                            <p style="text-align: center; font-size: 16px;">
+                                                <i>
+                                                    <font style="font-size: 18px;">Any Duration</font>
+                                                </i>
+                                            </p>
+                                            <p style="text-align: center; font-size: 16px;">
+                                                <i>
+                                                    <font style="font-size: 18px;">&amp;nbsp;Billing: Hourly Basis</font>
+                                                </i>
+                                            </p>
+                                            <h2 class="card-title pt0"/>
+                                            <p style="text-align: left; font-size: 16px;">
+                                                <i>
+                                                    <font style="font-size: 18px;">
+                                                        <br/>
+                                                    </font>
+                                                </i>
+                                            </p>
+                                        </div>
+                                        <p>
+                                            <br/>
+                                            <span style="font-size: 18px; font-weight: bolder; background-color: rgba(0, 0, 0, 0.03); font-style: italic;">Working Hours</span>&amp;nbsp;</p>
+                                    </div>
+                                </div>
+                                <div data-name="Box" class="col-lg-4 s_col_no_bgcolor text-center pb72 pt16 hvr-float-shadow">
+                                    <div style="" class="card bg-300">
+                                        <h4 class="card-header">
+                                            <b>
+                                                <font style="font-size: 24px;">Full time Hiring</font>
+                                            </b>
+                                        </h4>
+                                        <div class="card-body text-center">
+                                            <h2 class="card-title pt0"/>
+                                            <p style="font-size: 16px;">
+                                                <i>
+                                                    <font style="font-size: 18px;">8 Hours per day</font>
+                                                </i>
+                                            </p>
+                                            <p style="font-size: 16px;">
+                                                <i>
+                                                    <font style="font-size: 18px;">5 Day per week</font>
+                                                </i>
+                                            </p>
+                                            <p style="font-size: 16px;">
+                                                <i>
+                                                    <font style="font-size: 18px;">Total hours = 176</font>
+                                                </i>
+                                            </p>
+                                            <p style="font-size: 16px;">
+                                                <i>
+                                                    <font style="font-size: 18px;">&amp;nbsp;Billing: Monthly Basis</font>
+                                                </i>
+                                            </p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <p>
+                                                <span style="font-size: 18px; font-weight: bolder; font-style: italic;">Working Hours</span>
+                                                <span style="font-size: 1rem; background-color: rgb(115, 165, 173);">&amp;nbsp;</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </t>
+    </template>
+</odoo>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+     <record id="product_wizard_form_view" model="ir.ui.view">
+        <field name="name">product.wizard.form.view</field>
+        <field name="model">college.student.product</field>
+        <field name="arch" type="xml">
+            <form string="product_wizard">
+                <group>
+                    <field name="product_ids" widget="many2many_tags"/>
+                </group>
+                <footer>
+                    <button name="action_submit" string="Submit" type="object" class="btn-primary"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+       
+    <!-- teacher Action -->
+    <record id="action_product_wizard" model="ir.actions.act_window">
+        <field name="name">Product Wizard</field>
+        <field name="res_model">college.student.product</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+        <field name="view_id" ref="college_management.product_wizard_form_view"/>
+    </record>
+</odoo>

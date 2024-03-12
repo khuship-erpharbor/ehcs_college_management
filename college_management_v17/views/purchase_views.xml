@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="purchase_inherited_form_view" model="ir.ui.view">
+        <field name="name">purchase.inherited.form.view</field>
+        <field name="model">purchase.order</field>
+        <field name="inherit_id" ref="purchase.purchase_order_form"/>
+        <field name="arch" type="xml">
+            <header>
+                <button name="%(college_management.action_product_wizard)d" string="Add Product" type="action" class="oe_highlight">
+                </button>
+                <button name="action_emi" string="Create EMI" type="object" class="oe_highlight"/>
+                <button name="action_sale_order" string="Create Sale Order" type="object" class="oe_highlight"/>
+            </header>
+            <div class="oe_button_box" name="button_box">
+                <button name="action_open_sale_order" type="object" class="oe_stat_button" icon="fa-shopping-basket">
+                    <div class="oe_stat_info">
+                        <field name="partner_count"/>
+                        <span class="o_stat_info">Sale Order</span>
+                    </div>
+                </button>
+            </div>
+            <field name="partner_ref" position="after">
+                <field name="is_purchase_order"/>
+            </field>
+            <xpath expr="//sheet/group/group[2]" position="inside">
+                <field name="month"/>
+            </xpath>                
+            
+             <xpath expr="//field[@name='order_line']/tree/field[@name='product_id']" position = "before">
+                <field name="image" widget="image"/>
+            </xpath> 
+
+            <xpath expr="//notebook/page[@name='products']" position="after">
+                    <page string="EMI Line" >
+                        <field name="emi_line_ids">
+                            <tree>
+                                <field name="date"/>
+                                <field name="amount"/>
+                            </tree>
+                            <form>
+                                <group>
+                                    <field name="date"/>
+                                    <field name="amount"/>
+                                </group>
+                            </form>
+                        </field>
+                    </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>

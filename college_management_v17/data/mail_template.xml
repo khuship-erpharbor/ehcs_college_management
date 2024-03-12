@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="0">
+        <record id="college_student_email_template_data" model="mail.template">
+            <field name="name">Student: Send by email</field>
+            <field name="model_id" ref="college_management.model_college_student"/>
+            <field name="email_to">{{object.email_id}}</field>
+            <field name="subject">College Student(Ref {{ object.ref}})</field>
+            <field name="body_html" type="html">
+                <div style="margin: 0px; padding: 0px;">
+                    <p style="margin: 0px; padding: 0px; font-size: 13px;">
+                        Dear <t t-out="object.name"/>
+                        <br/><br/>
+                        Here is your reference <t t-out="object.ref"/>
+                        <br/><br/>
+                        Age : <t t-out="object.age"/>
+                        Address : <t t-out="object.address"/>
+                        <br/><br/>
+                        If you have any queries feel free to ask.
+                    </p>
+                </div>
+            </field>
+        </record>
+
+        <record id="college_teacher_email_template" model="mail.template">
+            <field name="name">Teacher: Send by email</field>
+            <field name="model_id" ref="college_management.model_college_teacher"/>
+            <field name="email_to">{{object.email_id}}</field>
+            <field name="subject">Teacher(Ref {{object.tech_ref}})</field>
+            <field name="body_html" type="html">
+                <div style="margin: 0px; padding: 0px; font-size:13px">
+                    <p style="margin: 0px; padding: 0px; font-size: 13px;">
+                        Dear <t t-out="object.name"/>
+                        <br/><br/>
+                        <t t-if="object.is_teacher">
+                            your are teacher and your reference id is <t t-out="object.ref"/>
+                        </t>
+                        <t t-else="">
+                            you are not a teacher
+                        </t>
+                    </p>
+                </div>
+            </field>
+        </record>
+
+        <record id="sale_order_email_template" model="mail.template">
+            <field name="name">Admin: Send by email</field>
+            <field name="model_id" ref="model_sale_order"/>
+            <field name="email_to">{{object.partner_id.email}}</field>
+            <field name="subject">Admin(tax {{object.partner_id.vat}})</field>
+            <field name="body_html" type="html">
+                <div style="margin: 0px; padding: 0px; font-size:13px">
+                    <p style="margin: 0px; padding: 0px; font-size: 13px;">
+                        Dear <t t-out="object.partner_id.name"/>
+                        <br/><br/>
+                        your amount is <t t-out="object.amount_total"/>
+                    </p>
+                </div>
+            </field>
+        </record>
+    </data>
+</odoo>
+
+
+
+

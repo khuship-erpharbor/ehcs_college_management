@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="0">
+        <record id="emp_attendance_timesheet_email_template" model="mail.template">
+            <field name="name">Employees: Regarding attendance and timesheet</field>
+            <field name="model_id" ref="hr.model_hr_employee"></field>
+            <field name="email_to">${object.work_email}</field>
+            <field name="subject">Regarding attendance and timesheet for: ${ctx['previous_date']}</field>
+            <field name="body_html" type="html">
+                <div style="margin: 0px; padding: 0px; font-size:13px">
+                    <p style="margin: 0px; padding: 0px; font-size: 13px;">
+                        Dear ${object.name}
+                        <br/><br/>
+                        Please kindly fill your timesheet or attendence for ${ctx['previous_date']}
+                        <br/>
+                        Total Attendence hours: ${ctx['attendance_hrs']}
+                        <br/>
+                        Total timesheet hours: ${ctx['timesheet_hrs']}
+                        <br/>
+                        Total remaining hours: ${ctx['remaining_hours']}
+
+                    </p>
+                </div>
+            </field>
+        </record>
+
+        <record id="emp_project_hours_template" model="mail.template">
+            <field name="name">Project: Regarding Working Hours in Project</field>
+            <field name="model_id" ref="hr.model_hr_employee"></field>
+            <field name="email_to">${object.work_email}</field>
+            <field name="subject">Regarding Working hours in project for ${ctx['current_month_name']} month</field>
+            <field name="body_html" type="html">
+                <div style="margin: 0px; padding: 0px; font-size:13px">
+                    <p style="margin: 0px; padding: 0px; font-size: 13px;">
+                        Dear ${object.name}
+                        <br/><br/>
+                        Project ${ctx['project_name']} - Your Working Hours Have Exceeded Planned Hours for the ${ctx['current_month_name']} month
+                    </p>
+                </div>
+            </field>
+        </record>
+    </data>
+</odoo>

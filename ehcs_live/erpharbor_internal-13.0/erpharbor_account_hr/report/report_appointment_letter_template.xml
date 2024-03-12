@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="report_employee_appointment">
+        <t t-call="web.html_container">
+            <t t-call="erpharbor_account_hr.report_layout">
+                <div class="page" style="margin-right:45px;margin-left:45px;font-family:Liberation Serif;">
+                    <t t-foreach="docs" t-as="doc">
+                    <div class="oe_structure"/>
+                    <center>
+                        <u><h6><b>Appointment Letter</b></h6></u>
+                    </center>
+                    <div class="col-md-6" style="text-align:justify;">
+                        Dear <b><span t-field="doc.employee_id.name"/></b>,<br/><br/>
+                        We are pleased to inform you that on successful of your training &amp; probation, We have decided to
+                        offer you a post of <b><span t-field="doc.job_id.name"/></b> with <b><span t-field="doc.company_id.name"/></b>. This is an
+                        official letter confirming your employment with <b><span t-field="doc.company_id.name"/></b> starting on
+                        <b><t t-if="doc.date_start"><span t-esc="doc.date_start.strftime('%d %B,%Y')"/></t></b><br/><br/>
+
+                        Your employment is subject to the terms and conditions detailed in the contract document supplied
+                        individually with this letter.<br/><br/>
+
+                        Congratulations and welcome a board to <b><span t-field="doc.company_id.name"/></b>. Looking forward to
+                        achieve many more milestones on this professional journey together.<br/><br/><br/><br/>
+
+                        Sincerely,<br/><br/><br/><br/><br/>
+                        Abhishek Mehta
+
+                        <p style="page-break-after:always;"/><br/>
+                        According to the terms of this agreement, <b><span t-field="doc.company_id.name"/></b>. will employee
+                        <b>
+                            <span t-field="doc.employee_id.name"/></b> position of <b><span t-field="doc.job_id.name"/></b> beginning on <b>
+                            <t t-if="doc.date_start"><span t-esc="doc.date_start.strftime('%d %B,%Y')"/></t>
+                        </b>.<br/><br/>
+
+                        <b>1. Duties and Responsibilities:</b><br/><br/>
+                        Develop new features and app that users care about. Under responsibility of Senior Odoo
+                        Developer, analyze challenge and estimate customer requirements gathered by our business
+                        analysts. Define features scope, bring a real value to the product. You will also get the chance to
+                        contribute to the development of the company through your vision and your taste for entrepreneurial
+                        activities.<br/><br/>
+
+                        <b>2. Discipline:</b><br/><br/>
+                        The employee should always be punctual and must give 100% to the copany and obey all the laws
+                        as well as follow all the rules and regulation of the company. He/she should not breach the duty
+                        assigned to them or any act of indiscipline or not following any conditions of the contract, he/she
+                        will get punished as per the management discipline.<br/><br/>
+
+                        <b>3. Compensation:</b><br/><br/>
+                        The remuneration package offered to you for the said designation is <b><span t-field="doc.wage"/></b> <b>INR</b> Gross Per Month.
+                        Your salary, incentives, allowances and / or any kind of payment / deductions, if any, will be subject
+                        to the prevailing norms there under. The company will deduct <b><span t-field="doc.deduction"/></b> <b>INR</b> per month as <b>security
+                        deposit</b> for one year and at the end of the year this deposit will be <b>refunded,</b> if left early then it will
+                        not be payable. Pay schedule: The employee will be paid according to the organization’s established pay schedule i.e. from <b>5<sup>th</sup> to 15<sup>th</sup></b> of the respective month.<br/><br/>
+
+                        <b>4. Place of work</b><br/><br/>
+                        Your current place of work will be our official Address as shown in Letter. However, you may be
+                        asked to work within India or outside India(onsite) for some amount of time, purely based on the.
+                        work. The Company will provide working atmosphere as well as all facilities to
+                        employees with adequate and necessary installation like computers having all required
+                        software’s and facility needed as per the nature of work.<br/><br/>
+
+                        <b>5. Increments</b><br/><br/>
+                        Your increment(s) and future prospects in the company are totally dependent on how efficiently and
+                        diligently you carry out the responsibilities levied on you. Other than your performance on job, your
+                        regularity in attendance, sincerity, good conduct, company's performance and other such relevant
+                        factors will be taken into consideration by the management. Employee's performance is reviewed
+                        once a year.<br/><br/><br/>
+
+
+                        <b>6. Work hours or schedule:</b><br/><br/>
+                        The standard hours for organizations are <b>9 hrs</b> per day from Monday to Friday and 1st, 3rd &amp; 5th
+                        Saturday. For now, 2nd &amp; 4th saturday will be holiday, The employee has to work
+                        from Monday to Saturday as per the standard hours decided. In case of urgency employeer have right to
+                        make changes in above.<br/><br/>
+
+                        <b>7. Annual leave: </b><br/><br/>
+                        Employee is entitled to annual leave i.e. vacation with pay in accordance with organization’s policy.
+                        Employees can take 12 casual leaves on prorata basis during the year and that to with a prior notice
+                        of at least 3-4 days.Sunday is a non working day and holiday in continuance to leave will be
+                        regarded as casual leave and not holiday. Employee has to inform management in case of
+                        emergency leave if not then there will be double deduction in salary.<br/><br/>
+
+                        <b>8. Termination of contract:</b><br/><br/>
+                        <b>By the employer with cause:</b> Under these circumstances <b>no compensation</b> will be paid. If the
+                        employee breaches the contract or if the company is not satisfied with the work of the employee
+                        then the contract will be terminated without any notice period.<br/><br/>
+                        <b>By the employer without cause:</b> The employer will give <b>2 months written notice</b> to the employee
+                        and pay salary and benefits in respect of the notice period as agree.<br/><br/>
+                        <b>By the employee:</b> The employee will give <b>2 months written notice.</b> The employer will pay salary
+                        and benefits in respect of the notice period as agreed.<br/><br/>
+                        In case of <b>temporary employee</b> they are terminated at the end of contract period.<br/><br/>
+
+                        <b>9. Privacy Policy:</b><br/><br/>
+                        In any situation or condition there should be <b>no discussion regarding salary and increment.</b> If the
+                        management will find you are not following rules there will be <b>strict action</b> will be taken by the
+                        management in the above situation.<br/><br/>
+
+                        <b>10. Discipline and Conduct</b><br/><br/>
+                        During the course of your service you will discharge your duties efficiently and diligently and to the
+                        best of your ability. You will devote your entire time and attention to the work of the Company and
+                        will not undertake any direct/indirect business or work, honorary or remuneration except with the
+                        written permission of the management in each case. Contravention of this will lead to termination of
+                        your service without any notice or any compensation in lieu of such notice.<br/><br/>
+                        The Company expects you to work with high standards of sincerity, efficiency, honesty and
+                        integrity. During your employment term you shall diligently and faithfully carry out the instructions
+                        given to you, in connection with the business and to the best of your skills, talent and ability,
+                        improve and further the business interest of the Company. You shall not indulge in activities
+                        detrimental to the interest of the Company.<br/><br/>
+                        During your tenure with the Company you will not disclose, divulge, or make public any of our
+                        technical, trade, professional or business data, process, product or software or any other important
+                        information, which might come into your possession during the continuance of your appointment
+                        with us. Your obligation to keep such information confidential shall remain even on termination or
+                        cancellation of this employment.<br/><br/>
+                        You will not, at any time, while in employment with the company, use other than reference to the
+                        business of the company and in the course of your duties any such confidential information OR
+                        after cessation of employment with the Company, use to disclose to anyone else such confidential
+                        information and you will also undertake to indemnify the company and its affiliates from any loss
+                        or damage from any breach of this undertaking.<br/><br/>
+                        You will disclose to us forthwith any discovery invention, process or improvement made or
+                        discovered by you while in the Company's service and such discovery, invention, process or
+                        improvement shall belong absolutely to and be the sole property of the Company. You shall abide
+                        by the code of ethics/conduct of the Company as existing from time to time.<br/>
+                        You shall maintain proper discipline and dignity of the office and shall deal with all matter with
+                        temperance. You shall communicate to the company any change in your address, as well as,
+                        personal status. All communications sent to you in normal course to the address given by you shall
+                        be deemed to have been received by you.<br/><br/><br/>
+
+                        <b>11. Verification of documents</b><br/>
+                        Your appointment is subject to verification of documents duly submitted by you regarding
+                        qualification, experience, expertise etc. In case particulars mentioned in your application are found
+                        false, not authentic or without documentary proof, your service would be liable to termination at
+                        any time without a notice or any compensation in lieu thereof.<br/><br/>
+
+                        <b>12. Others</b><br/><br/>
+                        You may be required to undertake travel on company work as and when required. In case of travel
+                        on company business, you will be entitled to such travel expenses/allowances as may be in force
+                        from time to time.<br/>
+                        You will be entitled to leave in accordance with the rules of the company, the details of which will
+                        be intimated to you separately. You will abide by company policies, rules and regulations that are in
+                        force for the time being or may be reframed from time to time.<br/><br/>
+                        With best wishes!
+
+                    </div>
+                    </t>
+                </div>
+            </t>
+        </t>
+    </template>
+
+    <template id="footer_address">
+        <t t-foreach="docs" t-as="doc">
+            <div style="width:100%;height:50px;">
+                <b style="margin-left:20px;">
+                    <span t-esc="doc.company_id.street"/>
+                    <span t-esc="doc.company_id.street2"/>
+                    <span t-esc="doc.company_id.city"/>
+                    <span t-esc="doc.company_id.state_id.name"/>
+                    <span t-esc="doc.company_id.country_id.name"/>
+                    <span t-esc="doc.company_id.zip"/>
+                </b><br/>
+                <table class="table table-bordered"
+                       style="border: 1px solid black;background-color:#00008B;color:white; margin-bottom: 0px;">
+                    <tr>
+                        <td style="padding:inherit;" width="30%" align="center">
+                            <span t-esc="doc.company_id.phone"/>
+                        </td>
+                        <td style="padding:inherit;" width="30%" align="center">
+                            <span t-esc="doc.company_id.email"/>
+                        </td>
+                        <td style="padding:inherit;border:1px solid #00008B;" width="60%" align="center">
+                            <span t-esc="doc.company_id.website"/>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </t>
+    </template>
+
+</odoo>

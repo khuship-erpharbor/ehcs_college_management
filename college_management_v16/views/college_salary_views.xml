@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<record id="college_salary_form_view" model="ir.ui.view">
+		<field name="name">college.salary.form</field>
+		<field name="model">college.salary</field>
+		<field name="arch" type="xml">
+			<form name="salary">
+				<sheet>
+					<group>
+						<group>
+							<field name="start_date"/>
+							<field name="tech_amount"/>
+						</group>
+					</group>
+				</sheet>
+			</form>
+		</field>
+	</record>
+
+
+  
+    <record id="college_salary_tree_view" model="ir.ui.view">
+		<field name="name">college.salary.tree</field>
+		<field name="model">college.salary</field>
+		<field name="arch" type="xml">
+			<tree>
+				<field name="start_date"/>
+				<field name="tech_amount"/>
+			</tree>
+		</field>
+	</record>
+
+
+
+
+	<record id="action_college_salary" model="ir.actions.act_window">
+        <field name="name">College Salary</field>
+        <field name="res_model">college.salary</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+	
+
+	   <menuitem id="menu_college"
+	   	name = "College Management"/>
+
+
+	   	<menuitem id="menu_salary"
+	   		name="Salary"
+	   		parent="menu_college"
+	   		action="college_management.action_college_salary"/>
+
+</odoo>

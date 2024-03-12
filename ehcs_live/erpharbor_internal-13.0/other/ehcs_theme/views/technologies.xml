@@ -1,0 +1,160 @@
+<odoo>
+  <template id="theme_menu_technologies_two" name="website.technologies_two">
+      <t t-call="website.layout">
+        <div id="wrap" class="oe_structure oe_empty">
+          <section data-name="Title" class="pb0 pt0 bg-100">
+            <div class="container">
+              <div class="row s_nb_column_fixed">
+                <div style="text-align: center;" class="col-lg-12 s_title pb0 pt0">
+                  <h1 class="s_title_default pb32 pt24">
+                    <font style="font-size: 36px;">
+                      <b>
+                      </b>
+                      <b>Technologies On Which We Work</b>
+                    </font>
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="s_company_team pb0 bg-100" data-name="Company Team" style="">
+            <div class="container">
+              <div class="row s_nb_column_fixed">
+                <div class="col-lg-6 pt16 pb16 bg-100" style="">
+                  <div class="row s_col_no_resize s_col_no_bgcolor">
+                    <div class="hvr-buzz col-lg-4 ">
+                      <img alt="Company team" src="/ehcs_theme/static/src/img/python.png" class="img-fluid d-block mx-auto" data-original-title="" title="" aria-describedby="tooltip672267" style="width: 50%;" />
+                    </div>
+                    <div class="col-lg-8 ">
+                      <h4 class="pt16">&amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;<b>Python</b>
+                      </h4>
+                      <p class="text-muted">&amp;nbsp;</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 pt16 pb16 bg-100">
+                  <div class="row s_col_no_resize s_col_no_bgcolor">
+                    <div class="hvr-buzz col-lg-4">
+                      <img alt="Company team" src="/ehcs_theme/static/src/img/odoo.png" class="img-fluid rounded-circle d-block mx-auto img-thumbnail" data-original-title="" title="" aria-describedby="tooltip247409" style="width: 50%;"/>
+                    </div>
+                    <div class="col-lg-8 pt16">
+                      <h4>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;  <b>Odoo ERP</b>
+                      </h4>
+                      <p class="text-muted">&amp;nbsp;</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 pt16 pb8 bg-100" style="">
+                  <div class="row s_col_no_resize s_col_no_bgcolor">
+                    <div class="hvr-buzz col-lg-4">
+                      <img alt="Company team" src="/ehcs_theme/static/src/img/android.png" class="img-fluid rounded-circle d-block mx-auto img-thumbnail" data-original-title="" title="" aria-describedby="tooltip918700" style="width: 50%;"/>
+                    </div>
+                    <div class="col-lg-8 pt16">
+                        <h4 class="pt8 pb24" style="margin-left: 1.5em;">
+                            <span style="font-weight: bolder;">Android</span>
+                          </h4>
+                        <p class="text-muted">&amp;nbsp;</p>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 pt16 pb16 bg-100">
+                  <div class="row s_col_no_resize s_col_no_bgcolor">
+                    <div class="hvr-buzz col-lg-4">
+                      <img alt="Company team" src="/ehcs_theme/static/src/img/erpnext.png" class="img-fluid rounded-circle d-block mx-auto img-thumbnail" data-original-title="" title="" aria-describedby="tooltip748588" style="width: 50%;"/>
+                    </div>
+                    <div class="col-lg-8 pt16">
+                        <h4 class="pb24 pt0" style="margin-left: 1.5em;">
+                            <span style="font-weight: bolder;">ERP NEXT</span>
+                          </h4>
+                        <p class="text-muted">&amp;nbsp;</p>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="s_company_team pb0 bg-100" data-name="Company Team">
+            <div class="container">
+              <div class="row s_nb_column_fixed">
+                <div class="col-lg-6 pt16 pb16 bg-100 pt8" style="">
+                  <div class="row s_col_no_resize s_col_no_bgcolor">
+                    <div class="hvr-buzz col-lg-4">
+                      <img alt="Company team" src="/ehcs_theme/static/src/img/flectro.png" class="img-fluid rounded-circle d-block mx-auto img-thumbnail" data-original-title="" title="" aria-describedby="tooltip954413" style="width: 50%;"/>
+                    </div>
+                    <div class="col-lg-8 pt0">
+                      <h4 class="pb24 pt0" style="margin-left: 1.5em;">
+                        <span style="font-weight: bolder;">Flectra</span>
+                      </h4>
+                      <p class="text-muted">&amp;nbsp;</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 pt16 pb16 bg-100 pt8">
+                  <div class="row s_col_no_resize s_col_no_bgcolor">
+                    <div class="hvr-buzz col-lg-4">
+                      <img alt="Company team" src="/ehcs_theme/static/src/img/apple.png" class="img-fluid rounded-circle d-block mx-auto img-thumbnail" data-original-title="" title="" aria-describedby="tooltip114794" style="width: 50%;" />
+                    </div>
+                    <div class="col-lg-8 pt0">
+                      <h4 class="pb24 pt0" style="margin-left: 1.5em;">
+                          <span style="font-weight: bolder;">IOS</span>
+                        </h4>
+                      <p class="text-muted">&amp;nbsp;</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section data-name="Images Carousel" class="pb0 pt0 bg-100">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-lg-5">
+                  <ul>
+                    <li>
+                      <h5 class="text-primary pb128 pt80" style="text-align: justify; ">
+                        <font style="">
+                          <span style="color: rgb(0, 0, 0); font-size: 18px;">
+                            <b>ERP Harbor Consulting Services we are focusing on Enterprise Solutions. Services we provide are, End to End ERP Implementation, Development, Customization, Migration, Support, Technical and Functional Training, Website Building, Configuration, Consultancy, Installation &amp;amp; Hosting.</b>
+                          </span>
+                          <span style="font-size: 18px;"></span>
+                        </font>
+                        <br/>
+                        <font style="">
+                          <br/>
+                        </font>
+                      </h5>
+                    </li>
+                  </ul>
+                </div>
+                <div data-name="Carousel" data-interval="2000" class="s_images_carousel s_carousel s_col_no_bgcolor carousel col-lg-6 s_carousel_rounded slide" id="myCarousel1573049220445">
+                  <ol class="carousel-indicators">
+                    <li data-slide-to="0" data-target="#myCarousel1573049220445"/>
+                    <li data-slide-to="1" data-target="#myCarousel1573049220445" class="active"/>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div style="" class="carousel-item pb0 active carousel-item-left">
+                      <img alt="" src="/ehcs_theme/static/src/img/community.png" class="img img-fluid" data-original-title="" title="" aria-describedby="tooltip210878"/>
+                      <div class="carousel-caption">Odoo Community</div>
+                    </div>
+                    <div style="" class="carousel-item pb136 pt48 carousel-item-next carousel-item-left">
+                      <img alt="" src="/ehcs_theme/static/src/img/entrprise.png" class="img img-fluid" data-original-title="" title="" aria-describedby="tooltip279177"/>
+                      <div class="carousel-caption">Odoo Enterprise</div>
+                    </div>
+                  </div>
+                  <div title="Previous" aria-label="Previous" role="img" data-slide="prev" data-target="#myCarousel1573049220445" class="carousel-control-prev">
+                    <span class="carousel-control-prev-icon"/>
+                    <span class="sr-only o_default_snippet_text">Previous</span>
+                  </div>
+                  <div title="Next" aria-label="Next" role="img" data-slide="next" data-target="#myCarousel1573049220445" class="carousel-control-next">
+                    <span class="carousel-control-next-icon"/>
+                    <span class="sr-only o_default_snippet_text">Next</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </t>
+    <!-- </t> -->
+  </template>
+</odoo>

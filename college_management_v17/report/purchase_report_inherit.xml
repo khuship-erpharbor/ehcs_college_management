@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="inherit_purchase_report" inherit_id="purchase.report_purchaseorder_document">
+        <xpath expr="//th[@name='th_price_unit']" position="before">
+            <t t-if="o.is_purchase_order">
+                <th name="th_price_unit" class="text-center">Image</th>
+            </t>
+            
+        </xpath>
+        <xpath expr="//td/span[@t-field='line.product_uom.name']" position="before">
+            <t t-if="o.is_purchase_order">
+            <td>
+                
+                <center><img t-att-src="image_data_uri(line.product_id.image_1920)" style="max-height:60pt;max-width:60%;margin-left:30px;" /></center>
+            </td>
+        </t>
+        </xpath>
+    </template>
+</odoo>
+
+
+
+<!-- <odoo>
+    <template id="inherit_purchase_report" inherit_id="purchase.report_purchaseorder_document">
+        <xpath expr="//th[@name='th_price_unit']" position="before">
+            <td>
+                <t t-if="o.is_purchase_order">    
+                    <th name="th_price_unit" class="text-end">Image</th>
+                </t>
+            </td>
+           
+        </xpath>
+        <xpath expr="//td/span[@t-field='line.product_uom.name']" position="before">
+            <td>
+                <t t-if="o.is_purchase_order">
+                    <img t-att-src="image_data_uri(line.product_id.image_1920) " style="max-height:70pt;max-width:70%"/>
+                </t>   
+            </td>
+        </xpath>
+    </template>
+</odoo> -->
+
+
+
+
+
+
+
+
+

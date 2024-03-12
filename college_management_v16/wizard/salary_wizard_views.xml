@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- teacher Form View -->
+    <record id="college_student_salary_form_view" model="ir.ui.view">
+        <field name="name">college.student.salary.form</field>
+        <field name="model">college.student.salary</field>
+        <field name="arch" type="xml">
+            <form string="salary_wizard">
+                <group>
+                    <field name="teacher_id" widget="many2many_tags"/>
+                    <field name="date"/>
+                    <field name="amount"/>
+                </group>
+               
+               <footer>
+                    <button name="action_add" string="Add" type="object" class="btn-primary"/>
+                </footer> 
+            </form>
+        </field>
+    </record>
+
+    <!-- teacher Action -->
+    <record id="action_college_student_salary_wizard" model="ir.actions.act_window">
+        <field name="name">Salary Wizard</field>
+        <field name="res_model">college.student.salary</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+        <field name="view_id" ref="college_management.college_student_salary_form_view"/>
+    </record>
+
+    <menuitem id="menu_college"
+        name="College Management"/>
+
+        <menuitem id="menu_wizard"
+            name="Wizard"
+            parent="menu_college"
+            action="college_management.action_college_student_salary_wizard"/>
+
+
+</odoo>

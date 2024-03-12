@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<record id="subject_form_view" model="ir.ui.view">
+		<field name="name">college.subject.form</field>
+		<field name="model">college.subject</field>
+		<field name="arch" type="xml">
+			<form name="Subjects">
+				<sheet>
+					<div class="oe_button_box" name="button_box">
+						<button name="action_open_teachers" type="object" class="oe_stat_button" icon="fa-users">
+							<div class="oe_stat_info">
+								<field name="teacher_count" class="o_stat_value"/>
+								<span class="o_stat_info">Teachers</span>
+							</div>
+						</button>
+					</div>
+					<div class = "oe_title">
+						<h1>
+							<field name="ref" readonly="1"/>
+						</h1>
+					</div>
+					<group>
+						<group>
+							<field name="name" required="1"/>
+							<field name ="description"/>
+							<field name="marks"/>
+							<field name="sequence"/>
+						</group>
+				</group>
+				</sheet>
+			</form>
+		</field> 
+
+	</record>
+    
+    <record id="college_subject_tree_view" model="ir.ui.view">
+        <field name="name">college.subject.tree</field>
+        <field name="model">college.subject</field>
+        <field name="arch" type="xml">
+            <tree>
+            	<field name="id"/>
+                <field name="name"/>
+                <field name="description"/>
+            </tree>
+        </field>
+    </record>
+
+
+	<record id="action_college_subject" model="ir.actions.act_window">
+        <field name="name">Subject</field>
+        <field name="res_model">college.subject</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+	
+
+	   <menuitem id="menu_college"
+	   	name = "College Management"/>
+
+	   	<menuitem id="menu_config"
+	   		name="Configuration"
+	   		parent="menu_college"/>
+
+	   		<menuitem id="menu_subject"
+	   			name="Subject"
+	   			parent="menu_config"
+	   			action="college_management.action_college_subject"/>
+
+</odoo>

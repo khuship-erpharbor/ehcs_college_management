@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<record id="report_student_details" model="ir.actions.report">
+		<field name="name">Student Details</field>
+		<field name="model">college.student</field>
+		<field name="report_type">qweb-pdf</field>
+		<field name="report_name">college_management.report_student_detail</field>
+		<field name="report_file">college_management.report_student_detail</field>
+		<field name="binding_model_id" ref="model_college_student"/>
+		<field name="binding_type">report</field>
+	</record>
+
+	<record id="report_teacher_details" model="ir.actions.report">
+		<field name="name">Teacher Details</field>
+		<field name="model">college.teacher</field>
+		<field name="report_type">qweb-pdf</field>
+		<field name="report_name">college_management.report_teacher_detail</field>
+		<field name="report_file">college_management.report_teacher_detail</field>
+		<field name="binding_model_id" ref="model_college_teacher"/>
+		<field name="binding_type">report</field>
+	</record>
+
+	<record id="action_report_all_student_list" model="ir.actions.report">
+		<field name="name">Student Details</field>
+		<field name="model">student.report.wizard</field>
+		<field name="report_type">qweb-pdf</field>
+		<field name="report_name">college_management.report_all_student_list</field>
+		<field name="report_file">college_management.report_all_student_list</field>
+		<field name="binding_model_id" ref="model_student_report_wizard"/>
+		<field name="binding_type">report</field>
+	</record>
+
+	
+</odoo>

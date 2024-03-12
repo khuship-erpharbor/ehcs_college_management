@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record id="hr_see_all_employee_public_rule" model="ir.rule">
+        <field name="name">See All Employee Public</field>
+        <field name="model_id" ref="hr.model_hr_employee_public"/>
+        <field name="groups" eval="[(6, 0, [ref('hr.group_hr_manager')])]"/>
+        <field name="domain_force">[(1,'=',1)]</field>
+    </record>
+
+    <record id="hr_see_own_employee_public_rule" model="ir.rule">
+        <field name="name">See Own Employee Public</field>
+        <field name="model_id" ref="hr.model_hr_employee_public"/>
+        <field name="groups" eval="[(6, 0, [ref('hr.group_hr_user')])]"/>
+        <field name="domain_force">[('user_id','=',user.id)]</field>
+    </record>
+
+    <record id="hr_see_all_employee_rule" model="ir.rule">
+        <field name="name">See All Employee</field>
+        <field name="model_id" ref="hr.model_hr_employee"/>
+        <field name="groups" eval="[(6, 0, [ref('hr.group_hr_manager')])]"/>
+        <field name="domain_force">[(1,'=',1)]</field>
+    </record>
+
+    <record id="hr_see_own_employee_rule" model="ir.rule">
+        <field name="name">See Own Employee</field>
+        <field name="model_id" ref="hr.model_hr_employee"/>
+        <field name="groups" eval="[(6, 0, [ref('hr.group_hr_user')])]"/>
+        <field name="domain_force">[('user_id','=',user.id)]</field>
+    </record>
+
+</odoo>

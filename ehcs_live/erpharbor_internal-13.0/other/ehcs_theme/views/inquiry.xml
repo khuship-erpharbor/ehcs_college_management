@@ -1,0 +1,209 @@
+<odoo>
+	<template id="theme_menu_inquiry_page"
+		name="website.inquiry_page">
+		<t t-call="website.layout">
+			<div id="wrap" class="oe_structure oe_empty bg-100">
+				<section class="bg-100 pb8 pt4" data-name="Title">
+					<div class="container">
+						<div class="row s_nb_column_fixed">
+							<div class="col-lg-12 s_title pt16 pb16"
+								style="text-align: center;">
+								<h1 class="s_title_default pt4 pb0">
+									<font style="font-size: 40px;"
+										class="o_default_snippet_text">
+										<b> Let's Talk </b>
+									</font>
+								</h1>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<form class="quote_form mt16">
+					<input type="hidden" name="csrf_token"
+						t-att-value="request.csrf_token()" />
+					<div class="container">
+						<div
+							class="form-group row form-field o_website_form_required_custom o_fake_not_editable">
+							<div class="col-lg-3 col-md-4">
+								<label class="col-form-label o_fake_editable"
+									for="contact_name">Your Name</label>
+							</div>
+							<div class="col-lg-7 col-md-8">
+								<input type="text"
+									class="form-control o_website_form_input contact_name"
+									name="contact_name" required="" />
+							</div>
+						</div>
+						<div
+							class="form-group row form-field o_website_form_required_custom o_fake_not_editable">
+							<div class="col-lg-3 col-md-4">
+								<label class="col-form-label o_fake_editable"
+									for="email_from">Your Email</label>
+							</div>
+							<div class="col-lg-7 col-md-8">
+								<input type="email"
+									class="form-control o_website_form_input email_from"
+									name="email_from" required="" />
+							</div>
+						</div>
+						<div class="form-group row form-field o_website_form_custom">
+							<div class="col-lg-3 col-md-4">
+								<label class="col-form-label o_fake_editable" for="phone">Phone
+									Number
+								</label>
+							</div>
+							<div class="col-lg-7 col-md-8">
+								<input type="text"
+									class="form-control o_website_form_input phone" name="phone"
+									placeholder="Ex: +91 9998277964" />
+							</div>
+						</div>
+						<div
+							class="form-group row form-field o_website_form_custom  o_fake_not_editable">
+							<div class="col-lg-3 col-md-4">
+								<label class="col-form-label o_fake_editable" for="skype">Skype
+								</label>
+							</div>
+							<div class="col-lg-7 col-md-8">
+								<input type="text"
+									class="form-control o_website_form_input skype" name="skype" />
+							</div>
+						</div>
+						<div
+							class="form-group row form-field o_website_form_custom o_fake_not_editable">
+							<div class="col-lg-3 col-md-4">
+								<label class="col-form-label o_fake_editable"
+									for="company_name">Company Name</label>
+							</div>
+							<div class="col-lg-7 col-md-8">
+								<input type="text"
+									class="form-control o_website_form_input company_name"
+									name="company_name" />
+							</div>
+						</div>
+						<div class="form-group row form-field o_website_form_custom">
+							<div class="col-lg-3 col-md-4">
+								<label class="col-form-label o_fake_editable"
+									for="website">Website</label>
+							</div>
+							<div class="col-lg-7 col-md-8">
+								<input type="text"
+									class="form-control o_website_form_input website"
+									name="website" />
+							</div>
+						</div>
+						<div class="row form-group form-field o_website_form_custom">
+							<div class="col-lg-3 col-md-4 ">
+								<label class="col-form-label " for="type">
+									Project Budget
+								</label>
+							</div>
+							<div class="col-lg-7 col-md-8">
+								<select
+									class="form-control  o_website_form_input budget "
+									name="budjet_id">
+									<option value="" selected="selected" disabled="disabled">Select
+										Project Budget
+									</option>
+									<option value="1k_to_5k">Below $5k</option>
+									<option value="5k_to_15k">$5k - $15k</option>
+									<option value="15k_to_40k">$15k - $40k</option>
+									<option value="40k_to_60k">$40k - $60k</option>
+									<option value="60k">Above $60k</option>
+								</select>
+							</div>
+						</div>
+						<div
+							class="row form-group form-field o_website_form_custom o_fake_not_editable">
+							<div class="col-lg-3 col-md-4">
+								<label class="col-form-label o_fake_editable"
+									for="description">
+									Select Your Requirement
+								</label>
+							</div>
+							<div class="col-lg-7 col-md-8 ">
+								<div class="col-md-12 col-sm-12 req_box"
+									style="border-radius: 4px;border: 1px solid #d9d9d9; display: inline-block;">
+									<br></br>
+									<div class="o_website_form_flex">
+										<t t-if="requirement_ids">
+											<t t-foreach="requirement_ids" t-as='r'>
+												<div class="checkbox o_website_form_flex_item">
+													<label>
+														<input type="checkbox"
+															class="o_website_form_input req_name" t-att-value="r.id" />
+														<span class="o_fake_editable">
+															<t t-esc="r.name" />
+														</span>
+													</label>
+												</div>
+											</t>
+										</t>
+									</div>
+								</div>
+							</div>
+						</div>
+						<input class="req_ids" type="hidden" value="" />
+
+						<div class="row form-group form-field o_website_form_custom">
+							<div class="col-lg-3 col-md-4">
+								<label class="col-form-label o_fake_editable"
+									for="description">
+									Project Information
+								</label>
+							</div>
+							<div class="col-lg-7 col-md-8">
+								<textarea
+									class="form-control o_website_form_input description"
+									name="description"
+									placeholder="I want to customize Sales module and Invoice reports and also need Warehouse configuration..." />
+
+							</div>
+						</div>
+
+						<div class="row form-group form-field o_website_form_custom">
+							<div class="col-lg-3 col-md-4">
+								<label class="col-form-label o_fake_editable"
+									for="fileupload">
+									Attach File ( If Any )
+								</label>
+							</div>
+							<div class="col-lg-7 col-md-8">
+								<!-- <input type="file" name="task_attachment" multiple="true"/> -->
+								<input type="file"
+									class="form-control o_website_form_input fileupload"
+									name="fileupload" value="fileupload" id="fileupload"
+									onchange="handle(this.files)" multiple="multiple" />
+								<input type='hidden' class='image_src' id='image_src'
+									name='image' value=""></input>
+								<input type='hidden' class='file_name' id='file_name'
+									name='file_name' value=""></input>
+							</div>
+						</div>
+
+						<div class="col-md-12 col-sm-12 mt16">
+							<i align="left"
+								class="text-shadow fa fa-lock fa-1x text-dark-green" />
+							&amp;nbsp;
+							<span class="text-dark-blue">
+								<b>We respect your privacy.</b>
+								<a href="/privacy_page" class="text-dark-green">*Privacy Policy</a>
+							</span>
+							<p></p>
+						</div>
+
+						<div class="offset-lg-3 offset-md-4 col-md-8 col-lg-7 pb40">
+							<!-- <button type="button" class="btn btn-primary btn-lg o_website_form_send 
+								quote_create ">Request Quote</button> -->
+							<button
+								class="btn-get-quote btn btn-primary btn-lg quote_create">Request Quote</button>
+							<!-- <span id="o_website_form_result" /> -->
+						</div>
+					</div>
+				</form>
+			</div>
+		</t>
+	</template>
+</odoo>
+    

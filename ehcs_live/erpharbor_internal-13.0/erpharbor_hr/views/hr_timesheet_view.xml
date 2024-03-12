@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="erpharbor_hr_timesheet_sheet_form" model="ir.ui.view">
+        <field name="name">erpharbor.hr.timesheet.sheet.form</field>
+        <field name="model">hr_timesheet_sheet.sheet</field>
+        <field name="inherit_id" ref="hr_timesheet_attendance.hr_timesheet_sheet_form" />
+        <field name="arch" type="xml">
+            <field name="period_ids" position="before">
+                <field name="attendances_ids" readonly="1">
+                    <tree delete="false">
+                        <field name="check_in"/>
+                        <field name="check_out"/>
+                        <field name="sheet_id"/>
+                    </tree>
+                </field>
+            </field>
+        </field>
+    </record>
+
+</odoo>

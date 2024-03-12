@@ -1,0 +1,68 @@
+<odoo>
+    <data>
+
+        <!-- <record id="website.menu_home" model="website.menu">
+            <field name="name">Home</field>
+            <field name="url">/</field>
+            <field name="sequence" type="int">10</field>
+            <field name="parent_id" ref="website.main_menu"/>
+        </record> -->
+
+		
+        <record id="menu_home" model="website.menu">
+            <field name="name">Home</field>
+            <field name="url">/</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence" type="int">10</field>
+        </record>
+
+        <record id="menu_services_two" model="website.menu">
+            <field name="name">SERVICES</field>
+            <field name="url">/ehcs_services</field>
+            <field name="sequence" type="int">20</field>
+            <field name="parent_id" ref="website.main_menu"/>
+        </record>
+
+        <record id="menu_technologies_two" model="website.menu">
+            <field name="name">TECHNOLOGY</field>
+            <field name="url">/ehcs_technologies</field>
+            <field name="sequence" type="int">30</field>
+            <field name="parent_id" ref="website.main_menu"/>
+        </record>
+
+        <record id="menu_hireresources_two" model="website.menu">
+            <field name="name">HIRE RESOURCES</field>
+            <field name="url">/ehcs_hire-resources</field>
+            <field name="sequence" type="int">40</field>
+            <field name="parent_id" ref="website.main_menu"/>
+        </record>
+
+        <record id="menu_events_two" model="website.menu">
+            <field name="name">EVENTS</field>
+            <field name="url">/ehcs_events</field>
+            <field name="sequence" type="int">50</field>
+            <field name="parent_id" ref="website.main_menu"/>
+        </record>
+
+        <record id="menu_aboutus_two" model="website.menu">
+            <field name="name">ABOUT</field>
+            <field name="url">/ehcs_aboutus</field>
+            <field name="sequence" type="int">60</field>
+            <field name="parent_id" ref="website.main_menu"/>
+        </record>
+
+        <!-- <record id="menu_career_two" model="website.menu">
+            <field name="name">CAREER</field>
+            <field name="url">/ehcs_career</field>
+            <field name="sequence" type="int">16</field>
+            <field name="parent_id" ref="website.main_menu"/>
+        </record> -->
+
+        <record id="menu_blog_two" model="website.menu">
+            <field name="name">Blog</field>
+            <field name="url">/ehcs_blog</field>
+            <field name="sequence" type="int">70</field>
+            <field name="parent_id" ref="website.main_menu"/>
+        </record>
+    </data>
+</odoo>

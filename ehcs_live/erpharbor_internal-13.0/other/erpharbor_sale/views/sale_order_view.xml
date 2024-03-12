@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="erpharbor_sale_view_order_form" model="ir.ui.view">
+        <field name="name">erpharbor.sale.form</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <field name="payment_term_id" position="after">
+                <field name="hide_tax"/>
+            </field>
+        </field>
+    </record>
+
+</odoo>

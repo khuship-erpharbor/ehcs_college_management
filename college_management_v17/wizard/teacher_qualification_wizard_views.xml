@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- teacher Form View -->
+    <record id="teacher_qualification_wizard_form_view" model="ir.ui.view">
+        <field name="name">teacher.qualification.wizard.form</field>
+        <field name="model">teacher.qualification.wizard</field>
+        <field name="arch" type="xml">
+            <form string="teacher_qualification_wizard">
+                <group>
+                    <group>
+                        <field name="qualification"/>
+                    </group>
+                </group>
+                <footer>
+                    <button name="update_qualification" string="Update Qualification" type="object" class="oe_highlight"/>
+                    <button special="cancel" data-hotkey="x" string="Cancel" class="btn-secondary"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id = "teacher_qualification_action" model="ir.actions.act_window">
+        <field name="name">Qualification Wizard</field>
+        <field name="res_model">teacher.qualification.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+        <field name="view_id" ref="college_management.teacher_qualification_wizard_form_view"/>
+    </record>
+
+    <record id="teacher_qualification_wizard_action" model="ir.actions.act_window">
+        <field name="name">Teacher Qualification Update</field>
+        <field name="res_model">teacher.qualification.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="college_management.teacher_qualification_wizard_form_view"/>
+        <field name="target">new</field>
+        <field name="binding_model_id" ref = "model_college_teacher"/>
+        <field name="binding_view_types">list,form</field>
+    </record>
+</odoo>

@@ -1,0 +1,226 @@
+<odoo>
+    <template id="theme_menu_services_two" name="website.services_two">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure oe_empty">
+                <section class="pt32 pb0 bg-100" data-name="Title">
+                    <div class="container">
+                        <div class="row s_nb_column_fixed">
+                            <div class="col-lg-12 s_title pt16 pb16 bg-100" style="text-align: center;">
+                                <h1 class="s_title_default">
+                                    <font style="font-size: 36px;">
+                                        <b>Our Services</b>
+                                    </font>
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_features pt32 pb0 bg-100" data-name="Features" style="">
+                    <div class="container">
+                        <div class="row">
+                            <div class="hvr-glow col-lg-4 pb32 text-center pt0 border bg-100" style="">
+                                <i class="fa fa-3x fa-gear rounded-circle bg-gamma m-3" data-original-title="" title="" aria-describedby="tooltip686925"/>
+                                <h3>
+                                    <font style="font-size: 36px;">Migration</font>
+                                </h3>
+                                <ul>
+                                    <li>
+                                        <p style="text-align: justify; ">We always want to update our customers &amp;amp; their organizations to run with changing trends regularly.</p>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <p style="text-align: justify; ">ERP (Enterprise Resource Planning) software should always be updated with the latest version and for that we provide migration. The migration process includes Data Extraction, Data Loading, Integrity, Modules Migration, Database Migration, Data Verification, Data Quality, and Data Accuracy.</p>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <p style="text-align: justify; ">We have experienced resources for migration. We provide migration of existing Odoo/OpenERP to the latest version. We have migrated various databases from the old version to the latest Odoo ERP version.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="hvr-glow col-lg-4 pb32 text-center pt0 border bg-100" style="">
+                                <span class="fa fa-3x bg-epsilon m-3 fa-gears" data-original-title="" title="" aria-describedby="tooltip723526"/>
+                                <h3>
+                                    <font style="font-size: 36px;">Integration</font>
+                                </h3>
+                                <ul>
+                                    <li>
+                                        <p style="text-align: justify; ">We have expertise in the integration of Odoo ERP system with various third-party applications like eBay, Amazon, Google, Document Viewers, VOIP, Asterisk, Quickbooks, other ERP systems, and so on.</p>
+                                    </li>
+                                </ul>
+                                <p style="text-align: justify; ">
+                                    <br/>
+                                </p>
+                                <ul>
+                                    <li>
+                                        <p style="text-align: justify; ">We also have expertise in various payment gateway integration like Adyen, Stripe, Verifone, Realex, Global Payments, Close Brothers, CCAvenue, PayUMoney, SagePay and so on.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="hvr-glow col-lg-4 pb32 text-center pt0 border bg-100">
+                                <span class="fa fa-3x rounded-leaf bg-primary m-3 fa-mortar-board"/>
+                                <h3>
+                                    <font style="font-size: 36px;">Training</font>
+                                </h3>
+                                <ul>
+                                    <li>
+                                        <p style="text-align: justify; ">Training is the most important phase of any ERP implementation. Lack of training is a major cause of any ERP implementation failure.</p>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <p style="text-align: justify; ">Here, at ERP Harbor Consulting Services we have expertise in providing various training like Python, Technical &amp;amp; Advance Technical Training of Odoo. So in-house development will be possible for the user.</p>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <p style="text-align: justify; ">We provide end-user training and functional training by functional experts worked in the actual domain industry with actual use cases.</p>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <p style="text-align: justify; ">We also provide Remote Training, On-site Training or you are most welcome at our place to get trained.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_features pb0 pt0 bg-100" data-name="Features">
+                    <div class="container">
+                        <div class="row">
+                            <div class="hvr-glow col-lg-4 pt32 pb32 text-center border">
+                                <span class="fa fa-3x rounded-circle bg-gamma m-3 fa-globe"/>
+                                <h3>
+                                    <font style="font-size: 36px;">Onsite/Offshore Development</font>
+                                </h3>
+                                <ul>
+                                    <li>
+                                        <p style="text-align: justify; ">ERP Harbor Consulting Services is a leading company in Odoo development. We are having a highly experienced &amp;amp; highly skilled team of developers &amp;amp; managers to make sure your development will be quick &amp;amp; cost you the less maintaining quality of code following all international coding standards.</p>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <p style="text-align: justify; ">We provide offshore development which includes Product Design, Development, Customization, Support, Testing.</p>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <p style="text-align: justify; ">We also provide client-side/onsite development services to work with you at your location in person.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="hvr-glow col-lg-4 pt32 text-center pb0 border">
+                                <span class="fa fa-3x rounded bg-epsilon m-3 fa-comments-o"/>
+                                <h3>
+                                    <font style="font-size: 36px;">Consultancy</font>
+                                </h3>
+                                <h3>
+                                    <br/>
+                                </h3>
+                                <ul>
+                                    <li>
+                                        <p style="text-align: justify; ">While implementing ERP solutions in the organization one needs a consultant who can make sure implementation done smoothly &amp;amp; efficiently amongst the organization.</p>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <p style="text-align: justify; ">We provide various consultancy like Requirement gathering for clients, Business Process Management, Gap Analysis, Odoo Planning &amp;amp; Installation.</p>
+                                    </li>
+                                </ul>
+                                <p>
+                                    <br/>
+                                </p>
+                            </div>
+                            <div class="hvr-glow col-lg-4 pt32 pb32 text-center border">
+                                <span class="fa fa-3x rounded-leaf bg-primary m-3 fa-thumbs-o-up"/>
+                                <h3>
+                                    <font style="font-size: 36px;">Support</font>
+                                </h3>
+                                <h3>
+                                    <br/>
+                                </h3>
+                                <ul>
+                                    <li>
+                                        <p style="text-align: justify; ">ERP Harbor Consulting Services provides support even after project implementation for any Bug / Traceback for a specific time.</p>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <p style="text-align: justify; ">We also provide various support packages for Implementation, Development, Training, Migration, Function and Technical support.</p>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <p style="text-align: justify; ">You can hire us for post-implementation support so you can save the cost of one employee at your location.</p>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <p style="text-align: justify; ">Onsite support will be provided on request who can help users get used to a new system.</p>
+                                    </li>
+                                </ul>
+                                <div>
+                                    <br/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_features pb0 pt0 bg-100" data-name="Features">
+                    <div class="container">
+                        <div class="row">
+                            <div class="hvr-glow col-lg-4 pt32 pb32 text-center border" style="height: 497.6px;">
+                                <span class="fa fa-3x rounded-circle bg-gamma m-3 fa-desktop"/>
+                                <h3>Implementation</h3>
+                                <ul>
+                                    <li>
+                                        <p style="text-align: justify; ">At ERP Harbor consulting services we are also providing end to end implementation to satisfy all client's requirements.</p>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <p style="text-align: justify; ">We not only provide service of development but also provide implementation service. The configuration of ERP needs experience and skill. We have skills and experience to configure the ERP modules as per the business process.</p>
+                                    </li>
+                                </ul>
+                                <div>
+                                    <br/>
+                                </div>
+                            </div>
+                            <div class="hvr-glow col-lg-4 pb32 text-center border pt16">
+                                <span class="fa fa-3x rounded bg-epsilon m-3 fa-arrow-circle-down"/>
+                                <h3>Installation &amp;amp; Hosting</h3>
+                                <ul>
+                                    <li>
+                                        <p style="text-align: justify; ">We have experts who can make sure that you will get the right server installation either at your premises or on a cloud server.</p>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <p style="text-align: justify; ">We can also manage a SAAS server.</p>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <p style="text-align: justify; ">You can trust us for server hosting &amp;amp; security maintenance.</p>
+                                    </li>
+                                </ul>
+                                <div>
+                                    <br/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row s_nb_column_fixed">
+                            <div class="col-lg-12 s_title pt16 pb16 bg-100" style="text-align: center;">
+                               
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </t>
+    </template>
+</odoo>

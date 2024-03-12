@@ -1,0 +1,626 @@
+<odoo>
+	<template id="theme_menu_home_two"
+		name="website.homepage1_two">
+		<!-- <t name="Homepage" t-name="website.homepage1"> -->
+		<t t-call="website.layout">
+			<t t-set="pageName" t-value="'homepage'" />
+
+			<!--page redirect to web.whatsapp -->
+			<div class="whatapposition hvr-pulse ">
+				<a href="https://web.whatsapp.com/send?phone=919601184333"
+					target="_blank" rel="noopener">
+					<i class="fa fa-whatsapp fa-2x"></i>
+				</a>
+			</div>
+        
+            <!-- chatbot-->
+			<script >(function(w, d) { w.CollectId = "5ddced74e6461739e68fa998"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);</script>
+
+			<div id="wrap" class="oe_structure oe_empty">
+				<div id="myCarousel1573114914654"
+					class="s_carousel carousel slide s_carousel_default"
+					data-interval="5000" data-name="Carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel1573114914654" data-slide-to="0" />
+						<li data-target="#myCarousel1573114914654" data-slide-to="1" />
+						<li data-target="#myCarousel1573114914654" data-slide-to="2"
+							class="active" />
+					</ol>
+					<div class="carousel-inner">
+						<div class="carousel-item oe_custom_bg oe_img_bg pb152 pt256"
+							style="background-image: url(&quot;/web/image/website.s_carousel_default_image_1&quot;);"
+							data-name="Slide">
+							<div class="container">
+								<div class="row content">
+									<div class="carousel-content col-lg-9">
+										<div class="s_title pb8" data-name="Title">
+											<h2 class="s_title_default pb8">
+												<span style="font-size: 36px;">
+													<!-- jQuery Libraru -->
+													<!-- <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js?ver=1.4.2'></script> -->
+													<!-- Added -->
+													<b>
+														Technologies On Which We Work
+														<span id="changingword">Odoo ERP</span>
+													</b>
+													<br></br>
+													<br></br>
+													<h4>One Stop Solution of All Your Business Needs</h4>
+												</span>
+											</h2>
+											<div>
+												<br />
+											</div>
+										</div>
+										<div class="s_btn text-left pt16 pb16" data-name="Buttons">
+											&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+											<a href="/ehcs_aboutus" class="btn btn-secondary flat"
+												data-original-title="" title=""
+												aria-describedby="tooltip770214">About us</a>
+											<a href="/contactus" class="btn flat btn-primary"
+												data-original-title="" title=""
+												aria-describedby="tooltip545074">Contact us</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="carousel-item oe_img_bg pt152 pb152 oe_custom_bg"
+							style="background-image: url(&quot; /ehcs_theme/static/src/img/desktwo.jpg &quot;);"
+							data-name="Slide">
+							<div class="container">
+								<div class="row content">
+									<div class="carousel-content col-lg-7">
+										<div class="s_title pb8" data-name="Title">
+											<!-- <h2 class="s_title_default pt120 pb16"> <span style="font-size: 
+												36px;"> <b>Grow your business?</b> <b> <br/> </b> <b>Contact us we will surely 
+												help you</b> </span> </h2> -->
+										</div>
+										<p class="lead">&amp;nbsp; </p>
+										<!-- <div class="s_btn text-left pb16 pt0" data-name="Buttons">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;<a 
+											href="/contactus" class="btn flat btn-secondary" data-original-title="" title="" 
+											aria-describedby="tooltip421992">Contact&amp;nbsp; us</a>&amp;nbsp;</div> -->
+									</div>
+								</div>
+							</div>
+						</div>
+						<div
+							class="carousel-item oe_img_bg pt152 pb152 oe_custom_bg active"
+							style="background-image: url(&quot; /ehcs_theme/static/src/img/desk_three.jpg &quot;);"
+							data-name="Slide">
+							<div class="container">
+								<div class="row content">
+									<div class="carousel-content col-lg-7">
+										<div class="s_title pb8" data-name="Title">
+											<h2 class="s_title_default pt120 pb16">
+												<span style="font-size: 36px;">
+												</span>
+												&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+												<span style="font-size: 36px;">
+													<!-- <b>&amp;nbsp;Contact us for best deal</b> -->
+													<b>
+														<br />
+													</b>
+												</span>
+											</h2>
+										</div>
+										<div class="pb48 pt32 s_btn text-left" data-name="Buttons">
+											&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+											<!-- <a href="/contactus" class="btn flat btn-secondary" data-original-title="" 
+												title="" aria-describedby="tooltip421992">Contact&amp;nbsp; us</a> -->
+											&amp;nbsp;
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-control-prev"
+						data-target="#myCarousel1573114914654" data-slide="prev"
+						role="img" aria-label="Previous" title="Previous">
+						<span class="carousel-control-prev-icon" />
+						<span class="sr-only o_default_snippet_text">Previous</span>
+					</div>
+					<div class="carousel-control-next"
+						data-target="#myCarousel1573114914654" data-slide="next"
+						role="img" aria-label="Next" title="Next">
+						<span class="carousel-control-next-icon" />
+						<span class="sr-only o_default_snippet_text">Next</span>
+					</div>
+				</div>
+				<section class="pt32 bg-100 pb0" data-name="Title">
+					<div class="container">
+						<div class="row s_nb_column_fixed">
+							<div class="col-lg-12 s_title pt16 pb0"
+								style="text-align: center;">
+								<h1 class="s_title_default">
+									<font style="font-size: 36px;">
+										<b>Our Services</b>
+									</font>
+								</h1>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="s_team_profiles pt32 bg-100 pb0"
+					data-name="Team Profiles" style="">
+					<div class="container">
+						<div class="row d-flex align-items-stretch s_col_no_bgcolor">
+							<div class="col-lg-4 pt16 pb0">
+								<div class="hvr-glow card text-center bg-500" style="">
+									<div class="card-body">
+										<img class="img img-fluid rounded-circle m-3"
+											src="/ehcs_theme/static/src/img/code.png" style="width: 50%;"
+											alt="" data-original-title="" title=""
+											aria-describedby="tooltip832267" />
+										<h2 class="card-title">
+											<font style="font-size: 24px;">Installation &amp;amp; Hosting</font>
+										</h2>
+										<ul>
+											<li>
+												<p class="card-text" style="text-align: justify; ">We have experts who can make
+													sure that you will get right server installation either at
+													your premise or on cloud server.
+												</p>
+											</li>
+										</ul>
+										<ul>
+											<li>
+												<p class="card-text" style="text-align: justify; ">We can also manage a SAAS
+													server.
+												</p>
+											</li>
+										</ul>
+										<p class="card-text">
+											<br />
+										</p>
+										<p class="card-text">
+											<br />
+										</p>
+										<p class="card-text">
+											<br />
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 pt16 pb0">
+								<div class="hvr-glow card text-center bg-500">
+									<div class="card-body">
+										<img class="img img-fluid rounded-circle m-3"
+											src="/ehcs_theme/static/src/img/economic2.png"
+											style="width: 50%;" alt="" data-original-title="" title=""
+											aria-describedby="tooltip141268" />
+										<h2 class="card-title pt0 pb0">
+											<font style="font-size: 24px;">Onsite-Offshore</font>
+										</h2>
+										<h2 class="card-title pt0 pb4">
+											<font style="font-size: 24px;">Development</font>
+										</h2>
+										<ul>
+											<li>
+												<p class="card-text" style="text-align: justify; ">We are having highly
+													expierenced &amp;amp; highly skilled team of developers
+													&amp;amp; managers to make sure your development will be
+													quick &amp;amp; cost you less maintaining quality of code
+													following all international coding standards.
+												</p>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 pb0 pt16">
+								<div class="hvr-glow card text-center bg-500">
+									<div class="card-body">
+										<img class="img img-fluid rounded-circle m-3 mx-auto"
+											src="/ehcs_theme/static/src/img/migrate.png"
+											style="width: 50%;" alt="" data-original-title="" title=""
+											aria-describedby="tooltip325674" />
+										<h2 class="card-title pb8">
+											<font style="font-size: 24px;">Migration</font>
+										</h2>
+										<ul>
+											<li>
+												<p class="card-text" style="text-align: justify;">We have experienced resource
+													for migration. We provode migration of existing
+													Odoo/OpenERP to latest version. We have migrated various
+													databases from old version to latest Odoo ERP version.
+												</p>
+											</li>
+										</ul>
+										<p class="card-text">
+											<br />
+										</p>
+										<p class="card-text">
+											<br />
+											<br />
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="s_team_profiles bg-100 pb32 pt0"
+					data-name="Team Profiles">
+					<div class="container">
+						<div class="row d-flex align-items-stretch s_col_no_bgcolor">
+							<div class="col-lg-4 pt16 pb16">
+								<div class="hvr-glow card text-center bg-500">
+									<div class="card-body">
+										<img class="img img-fluid rounded-circle m-3 mx-auto"
+											src="/ehcs_theme/static/src/img/training.png"
+											style="width: 50%;" alt="" data-original-title="" title=""
+											aria-describedby="tooltip515354" />
+										<h2 class="card-title">
+											<font style="font-size: 24px;">Training</font>
+										</h2>
+										<ul>
+											<li>
+												<p class="card-text" style="text-align: justify; ">ERP Harbor Consulting Services
+													we have expertise in providing various trainings like
+													Python, Technical &amp;amp; Advance Technical Training of
+													Odoo. So inhouse development will be possible for user.
+												</p>
+											</li>
+										</ul>
+										<ul>
+											<li>
+												<p class="card-text" style="text-align: justify; ">
+													We also provide Remote Training, On-site Training or you
+													are most welcome at our place to get trained.
+													<br />
+												</p>
+											</li>
+										</ul>
+										<div>
+											<br />
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 pt16 pb0">
+								<div class="hvr-glow card text-center bg-500" style="">
+									<div class="card-body">
+										<img class="img img-fluid rounded-circle m-3"
+											src="/ehcs_theme/static/src/img/consulting.png"
+											style="width: 50%;" alt="" data-original-title="" title=""
+											aria-describedby="tooltip864273" />
+										<h2 class="card-title">
+											<font style="font-size: 24px;">Consultancy</font>
+										</h2>
+										<ul>
+											<li>
+												<p class="card-text" style="text-align: justify; ">While implementing ERP solution
+													in organisation one needs a consultant who can make sure
+													implementation done smoothly &amp;amp; eficiently amongst
+													the organisation.
+												</p>
+											</li>
+										</ul>
+										<ul>
+											<li>
+												<p class="card-text" style="text-align: justify; ">We provide various consultancy
+													like Requirement gathering for clients, Business Process
+													management, Gap Analysis, Odoo Planning &amp;amp;
+													Installation.
+												</p>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 pt16 pb16">
+								<div class="hvr-glow card text-center bg-500">
+									<div class="card-body">
+										<img class="img img-fluid rounded-circle m-3"
+											src="/ehcs_theme/static/src/img/support.png"
+											style="width: 50%;" alt="" data-original-title="" title=""
+											aria-describedby="tooltip42671" />
+										<h2 class="card-title pb4">
+											<font style="font-size: 24px;">Support</font>
+										</h2>
+										<ul>
+											<li>
+												<p class="card-text" style="text-align: justify; ">ERP Harbor Consulting Services
+													provides support even after project implementation for any
+													Bug / Traceback for specific time.
+												</p>
+											</li>
+										</ul>
+										<ul>
+											<li>
+												<p class="card-text" style="text-align: justify; ">We also provide various support
+													packages for Implementation, Development, Training,
+													Migration, Funcation and Technical support.
+												</p>
+											</li>
+										</ul>
+										<ul>
+										</ul>
+										<p>
+											<br />
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="pb0 pt0 bg-100" data-name="Title">
+					<div class="container">
+						<div class="row s_nb_column_fixed">
+							<div class="col-lg-12 s_title pt16 pb0"
+								style="text-align: center;">
+								<h1 class="s_title_default">
+									<span style="font-size: 36px;">
+										<b>Technologies On Which We Work</b>
+									</span>
+								</h1>
+								<div>
+									<br />
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="s_features_grid pt0 bg-100 pb0"
+					data-name="Features Grid" style="">
+					<div class="container ">
+						<div class="row">
+							<div class="hvr-grow col-lg-6 s_col_no_bgcolor pb0">
+								<div class="row">
+									<div class="col-lg-12 pt16 pb16 bg-100" data-name="Box"
+										style="">
+										<span
+											class="fa fa-2x rounded-circle bg-primary s_features_grid_icon fa-laptop"
+											data-original-title="" title=""
+											aria-describedby="tooltip48598" />
+										<div class="s_features_grid_content">
+											<h4 class="pb8">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Odoo ERP
+											</h4>
+											<p>&amp;nbsp;</p>
+										</div>
+									</div>
+									<div class="col-lg-12 pt16 pb16" data-name="Box">
+										<span
+											class="fa fa-2x rounded-circle bg-primary s_features_grid_icon fa-shopping-cart"
+											data-original-title="" title=""
+											aria-describedby="tooltip127705" />
+										<div class="s_features_grid_content">
+											<h4>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;E-Commerce</h4>
+											<p>&amp;nbsp;</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="hvr-grow col-lg-6 s_col_no_bgcolor pb24">
+								<div class="row">
+									<div class="col-lg-12 pt16 pb16" data-name="Box">
+										<span
+											class="fa fa-2x rounded bg-secondary s_features_grid_icon fa-wrench" />
+										<div class="s_features_grid_content">
+											<h4>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Website
+												Development
+											</h4>
+											<p>&amp;nbsp;</p>
+										</div>
+									</div>
+									<div class="col-lg-12 pt16 pb16" data-name="Box">
+										<span
+											class="fa fa-2x rounded bg-secondary s_features_grid_icon fa-mobile-phone" />
+										<div class="s_features_grid_content">
+											<h4>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Mobile Technology
+											</h4>
+											<p>&amp;nbsp;</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="pb0 pt0 bg-100" data-name="Title">
+					<div class="container">
+						<div class="row s_nb_column_fixed">
+							<div class="col-lg-12 s_title pt16 pb16 bg-100"
+								style="text-align: center;">
+								<h1 class="s_title_default pb16 pt16">
+									<font style="font-size: 36px;">
+										<b>We Specialized In</b>
+									</font>
+								</h1>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="s_features pb0 pt0 bg-100"
+					data-name="Features" style="">
+					<div class="container">
+						<div class="row">
+							<div class="pt32 text-center col-lg-3 pb0 bg-100" style="">
+								<i class="fa fa-3x fa-gear rounded-circle bg-gamma m-3"
+									data-original-title="" title=""
+									aria-describedby="tooltip492675" />
+								<h3 class="pb16 pt4">
+									<font style="font-size: 24px;">Software Development</font>
+								</h3>
+							</div>
+							<div class="text-center col-lg-3 pb0 bg-100 pt32" style="">
+								<span class="fa fa-3x rounded bg-epsilon m-3 fa-code"
+									data-original-title="" title=""
+									aria-describedby="tooltip321377" />
+								<h3>
+									<font style="font-size: 24px;">Customization</font>
+								</h3>
+								<p>
+									<font style="font-size: 18px;">
+										<br />
+									</font>
+									.
+								</p>
+							</div>
+							<div class="pt32 text-center col-lg-3 pb0 bg-100" style="">
+								<i class="fa fa-3x fa-leaf rounded-leaf bg-primary m-3"
+									data-original-title="" title=""
+									aria-describedby="tooltip295878" />
+								<h3>
+									<font style="font-size: 24px;">Integration</font>
+								</h3>
+								<p>
+									<font style="font-size: 18px;">
+										<br />
+									</font>
+								</p>
+							</div>
+							<div class="pt32 text-center pb0 col-lg-3">
+								<span
+									class="fa fa-3x rounded-circle bg-gamma m-3 fa-comments-o"
+									data-original-title="" title=""
+									aria-describedby="tooltip756944" />
+								<h3>
+									<font style="font-size: 24px;">Consulting</font>
+								</h3>
+								<p>
+									<br />
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="pb0 pt0 bg-100" data-name="Title">
+					<div class="container">
+						<div class="row s_nb_column_fixed">
+							<div class="col-lg-12 s_title pb16 pt0"
+								style="text-align: center;">
+								<h1 class="s_title_default pb0 pt16">
+									<font style="font-size: 36px;">
+										<span style="font-weight: bolder;">Who We Are..?</span>
+									</font>
+								</h1>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="s_text_image bg-100 pb40 pt0"
+					data-name="Text - Image">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="hvr-bubble-float-right col-lg-7 pt32 pb32">
+								<ul>
+									<li>
+										<p style="text-align: justify;">
+											<b>ERP Harbor Consulting Services</b>
+											was founded in December 2017 by
+											<b>Mr. Sudhir Arya</b>
+											&amp;amp;
+											<b>Mr. Abhishek Mehta</b>
+											with a vision of providing "One Stop Solution of All the
+											Business Needs of SMEs and Enterprises globally". Both Mr.
+											Sudhir Arya &amp;amp; Mr. Abhishek Mehta have&amp;nbsp; 8+
+											years of experience and have been working as a Team Leader,
+											Project Manager &amp;amp; Role Model for the naive.&amp;nbsp;
+										</p>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<p>
+											<b>
+												ERP Harbor
+											</b>
+											Consulting Services has successfully delivered the project
+											and work to clients from various countries.
+										</p>
+									</li>
+								</ul>
+								<p>&amp;nbsp;</p>
+							</div>
+							<div class="pb0 pt0 col-lg-3">
+								<img src="/ehcs_theme/static/src/img/we.png"
+									class="img img-fluid mx-auto" alt="Odoo • Text and Image"
+									data-original-title="" title=""
+									aria-describedby="tooltip826079" />
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="pt0 pb0 bg-100" data-name="Title">
+					<div class="container">
+						<div class="row s_nb_column_fixed">
+							<div class="col-lg-12 s_title pt16 pb16"
+								style="text-align: center;">
+								<h1 class="s_title_default">
+									<font style="font-size: 36px;">
+										<b>Why Erp Harbor?</b>
+									</font>
+								</h1>
+							</div>
+						</div>
+					</div>
+
+					<!-- <section class="s_media_list pt0 pb0 bg-100" style="" data-name="Media 
+						List"> -->
+					<div class="container">
+						<div class="row">
+							<div class="bg-100 col-lg-3 pt24">
+								<img src="/ehcs_theme/static/src/img/why.png"
+									class="img img-fluid" alt="" data-original-title="" title=""
+									aria-describedby="tooltip131385" />
+							</div>
+							<div
+								class="hvr-bubble-float-left s_media_list_body bg-100 col-lg-8 pb72 pt56">
+								<ul>
+									<li>
+										<p>
+											<font style="font-size: 18px;">
+												<b>Odoo ERP / OpenERP is a complete suite and Comprehensive
+													Solutions for any business.
+												</b>
+											</font>
+										</p>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<p>
+											<font style="font-size: 18px;">
+												<b>Dedication to client interests and needs. We are
+													dedicated to our clients to provide services for 24*7.
+												</b>
+											</font>
+										</p>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<p>
+											<font style="font-size: 18px;">
+												<b>We provide services on affordable prices that will fit in
+													your budget.
+												</b>
+											</font>
+										</p>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<p>
+											<b>
+												<font style="font-size: 18px;">Our main goal is to deliver Quality and
+													Accurate work to the clients.
+												</font>
+											</b>
+										</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			</div>
+		</t>
+	</template>
+</odoo>

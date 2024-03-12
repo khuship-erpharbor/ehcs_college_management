@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<record id="players_form_view" model="ir.ui.view">
+		<field name="name">college.players.form</field>
+		<field name="model">college.players</field>
+		<field name="arch" type="xml">
+			<form name="players">
+				<sheet>
+					<group>
+						<group>
+							<field name="batsman_id"/>
+							<field name="name"/>
+							<field name="four"/>
+							<field name="six"/>
+							<field name="over"/>
+							<field name="runs"/>
+						</group>
+				</group>
+				</sheet>
+			</form>
+		</field> 
+
+	</record>
+    
+    <record id="college_palyers_tree_view" model="ir.ui.view">
+    	<field name="name">college.players.tree</field>
+		<field name="model">college.players</field>
+		<field name="arch" type="xml">
+			<tree>
+				<field name="id"/>
+				<field name="batsman_id"/>
+				<field name="name"/>
+			</tree>
+		</field>
+    </record>
+
+
+	<record id="action_college_players" model="ir.actions.act_window">
+        <field name="name">Players</field>
+        <field name="res_model">college.players</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+	
+
+	   <menuitem id="menu_college"
+	   	name = "College Management"/>
+       
+
+	   	<menuitem id="menu_match"
+	   		name="Match"
+	   		parent="menu_college"/>
+
+	   <menuitem id="menu_players"
+	   	name="Players"
+	   	parent="menu_match"
+	   	action="college_management.action_college_players"/>
+
+</odoo>

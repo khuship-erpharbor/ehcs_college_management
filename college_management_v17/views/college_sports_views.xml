@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="action_open_students" model="ir.actions.act_window">
+        <field name="name">Students</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">college.student</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('game_id','=',active_id)]</field>
+    </record>
+    
+    <record id="search_view_sports" model="ir.ui.view">
+        <field name="name">search.view.sports</field>
+        <field name="model">college.sports</field>
+        <field name="arch" type="xml">
+            <search>
+                <filter string="Archived" name="inactive" domain="[('active','=',False)]"/> 
+            </search>
+        </field>
+    </record>
+
+    <record id="sports_form_view" model="ir.ui.view">
+        <field name="name">college.sports.form</field>
+        <field name="model">college.sports</field>
+        <field name="arch" type="xml">
+            <form name="sports">
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button name="%(college_management.action_open_students)d" type="action" class="oe_stat_button" icon="fa-users">
+                            <div class="oe_stat_info">
+                                <field name="student_count" class="o_stat_value"/>
+                                <span class="o_stat_info">Students</span>
+                            </div>
+                        </button>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="date"/>
+                            <field name ="fees"/>
+                            <field name="active"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field> 
+    </record>
+
+    <record id="action_college_sports" model="ir.actions.act_window">
+        <field name="name">Sports</field>
+        <field name="res_model">college.sports</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    
+
+       <menuitem id="menu_college"
+        name = "College Management"/>
+
+        <menuitem id="menu_sports"
+            name="Sports"
+            parent="menu_college"
+            action="college_management.action_college_sports"/>
+
+</odoo>
+

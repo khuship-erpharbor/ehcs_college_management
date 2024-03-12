@@ -1,0 +1,181 @@
+<odoo>
+    <template id="theme_menu_aboutus_two" name="website.about-us_two">
+            <t t-call="website.layout">
+                <div id="wrap" class="oe_structure oe_empty bg-100">
+                <section class="pb0 pt0 bg-100" data-name="Title">
+                    <div class="container">
+                    <div class="row s_nb_column_fixed">
+                            <div class="col-lg-12 s_title pb0 pt0" style="text-align: center;">
+                                    <h1 class="s_title_default pt0">
+                                      
+                                    </h1>
+                                  </div>
+                    </div>
+                    </div>
+                </section>
+                <section class="s_media_list pb0 pt0 bg-100" style="" data-name="Media List">
+                    <div class="container">
+                    <div class="row no-gutters">
+                        <div class="col-lg-3 pb0 pt24" style="">
+                        <img class="img img-fluid" src="/ehcs_theme/static/src/img/vision.png" alt="" data-original-title="" title="" aria-describedby="tooltip884259"/>
+                        </div>
+                        <div class="col-lg-8 s_media_list_body pt32 bg-100" style="">
+                        <h3>
+                            <font style="font-size: 36px;">&amp;nbsp; &amp;nbsp; <b>Our Vision &amp;amp; Mission</b></font>
+                        </h3>
+                        <ul>
+                            <li>
+                            <p>At ERP Harbor Consulting Services We are working towards make enterprise solutions available &amp;amp; easy for all small &amp;amp; medium organisations to grow them better with higher growth rate. We truly believe in Open Source culture so services we are providing, is only in open source products.</p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                            <p>We are trying to give it back to society by helping such organisations. By appreciating &amp;amp; helping organisations moving towards automation we felt we are giving some share in economic growth of world.<br/></p>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                    </div>
+                <!-- </section>
+                <section class="pb32 pt0 bg-100" data-name="Title"> -->
+                    <div class="container">
+                    <div class="row s_nb_column_fixed">
+                        <div class="col-lg-12 s_title pt16 pb0" style="text-align: center;">
+                        <h1 class="s_title_default">
+                            <font style="font-size: 36px;">
+                            <b>We Specialized In</b>
+                            </font>
+                        </h1>
+                        </div>
+                    </div>
+                    </div>
+                <!-- </section>
+                <section class="s_features pb0 pt0 bg-100" data-name="Features"> -->
+                    <div class="container">
+                    <div class="row">
+                        <div class="pt32 text-center pb0 col-lg-3">
+                        <i class="fa fa-3x fa-gear rounded-circle bg-gamma m-3" data-original-title="" title="" aria-describedby="tooltip629886"/>
+                        <h3>
+                            <font style="font-size: 24px;">Software Development</font>
+                        </h3>
+                        <p>
+                            <br/>
+                        </p>
+                        </div>
+                        <div class="pt32 text-center pb0 col-lg-3">
+                        <span class="fa fa-3x rounded bg-epsilon m-3 fa-code"/>
+                        <h3>
+                            <font style="font-size: 24px;">Customization</font>
+                        </h3>
+                        <p>
+                            <br/>
+                        </p>
+                        </div>
+                        <div class="pt32 text-center pb0 col-lg-2">
+                                &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;<i class="fa fa-3x fa-leaf rounded-leaf bg-primary m-3"/>
+                                <h3><font style="font-size: 24px;">Integration</font></h3>
+                                <p><br/></p>
+                            </div>
+                        <div class="pt32 text-center pb0 col-lg-3">
+                        <span class="fa fa-3x rounded-circle bg-gamma m-3 fa-comments-o" data-original-title="" title="" aria-describedby="tooltip193717"/>
+                        <h3>
+                            <font style="font-size: 24px;">Consulting</font>
+                        </h3>
+                        <p>
+                            <br/>
+                        </p>
+                        </div>
+                    </div>
+                    </div>
+                <!-- </section>
+                <section class="pb0 pt32 bg-100" data-name="Title"> -->
+                    <div class="container">
+                    <div class="row s_nb_column_fixed">
+                        <div class="col-lg-12 s_title pb0 pt0" style="text-align: center;">
+                        <h1 class="s_title_default">
+                            <font style="font-size: 36px;">
+                            <b>ERP Harbor Consulting Services</b>
+                            </font>
+                        </h1>
+                        </div>
+                    </div>
+                    </div>
+                <!-- </section>
+                <section class="s_media_list bg-100 pt0 pb0 bg-100" style="" data-name="Media List"> -->
+                    <div class="container">
+                    <div class="row">
+                        <div class="s_media_list_body bg-100 col-lg-11 pt24" style="">
+                        <ul>
+                            <li>
+                            <p><b>ERP Harbor Consulting Services</b> was founded in <b>December 2017 </b>by a vision of <b>Mr. Abhishek Mehta </b>&amp;amp;<b> Mr. Sudhir Arya </b>with a vision of providing "One Stop Solution of All the Business Needs of SMEs and Enterprises globally". Both Mr. Sudhir Arya &amp;amp; Mr. Abhishek Mehta have 8+ years of experience in the ERP industry and have been working as a Team Leader, Project Manager &amp;amp; Role Model for the naive. We believe in to give it back to the community so by helping on Odoo forum. We are one of the top contributors to the forum.</p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                            <p>We specialize in implementing business applications along with ERP, CRM, BPM, SCM, Human Resource management solutions, E-commerce solutions, &amp;amp; various IT software solutions including tailored software.</p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                            <p>ERP Harbor Consulting Services has successfully delivered the project and work to clients from various countries.<br/></p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <p>We are a team of passionate people whose goal is to improve everyone's life through disruptive products. We build great products to solve your business problems.<br/></p>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                    </div>
+                        <div class="carousel-inner">
+                        </div>
+                </section>
+                <div id="myCarousel1573106148157" class="s_quotes_carousel carousel slide s_carousel_default" data-interval="2000" data-name="Quotes">
+                    <ol class="carousel-indicators">
+                    <li data-target="#myCarousel1573106148157" data-slide-to="0" class="active"/>
+                    <li data-target="#myCarousel1573106148157" data-slide-to="1"/>
+                    </ol>
+                    <div class="carousel-inner">
+                    <div class="carousel-item pb120 pt16 active bg-100" data-name="Slide" style="">
+                        <div class="container">
+                        <div class="row content">
+                            <blockquote class="carousel-content col-lg-6 bg-white offset-lg-3">
+                            <i class="fa fa-1x fa-quote-left rounded-0 bg-secondary s_quotes_carousel_icon"/>
+                            <p class="o_default_snippet_text">Write a quote here from one of your customers. Quotes are a great way to build confidence in your products or services.</p>
+                            <footer>
+                                <img class="img" src="/ehcs_theme/static/src/img/pic.png" alt=""/>
+                                <span class="o_default_snippet_text">— Jane DOE, CEO of <b class="o_default_snippet_text">MyCompany</b></span>
+                            </footer>
+                            </blockquote>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item pb56 pt24 bg-100" data-name="Slide" style="">
+                        <div class="container">
+                        <div class="row content">
+                            <blockquote class="carousel-content col-lg-6 bg-white offset-lg-3">
+                            <i class="fa fa-1x fa-quote-left rounded-0 bg-secondary s_quotes_carousel_icon"/>
+                            <p class="o_default_snippet_text">Write a quote here from one of your customers. Quotes are a great way to build confidence in your products or services.</p>
+                            <footer>
+                                <img class="img" src="/ehcs_theme/static/src/img/snap.png" alt="" data-original-title="" title="" aria-describedby="tooltip309401"/>
+                                <span>— Jane DOE, CEO of <b class="o_default_snippet_text">MyCompany</b></span>
+                            </footer>
+                            </blockquote>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="carousel-control-prev" data-target="#myCarousel1573106148157" data-slide="prev" role="img" aria-label="Previous" title="Previous">
+                    <span class="carousel-control-prev-icon"/>
+                    <span class="sr-only o_default_snippet_text">Previous</span>
+                    </div>
+                    <div class="carousel-control-next" data-target="#myCarousel1573106148157" data-slide="next" role="img" aria-label="Next" title="Next">
+                    <span class="carousel-control-next-icon"/>
+                    <span class="sr-only o_default_snippet_text">Next</span>
+                    </div>
+                </div>
+                </div>
+            </t>
+    </template>
+</odoo>

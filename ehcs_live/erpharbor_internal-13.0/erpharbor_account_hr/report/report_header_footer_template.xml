@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="report_layout">
+        <div class="header"
+             style="border:1px solid black; border-style:none;margin-left:45px;margin-right:45px;">
+            <img src="/erpharbor_account_hr/static/src/img/erp_logo.png"
+                 style="width:35%;height:70px;"/>
+            <table class="table table-bordered" style="background-color:#00008B;color:white;margin-right:50px;">
+                <tr>
+                    <td style="border:1px solid #00008B;"></td>
+                </tr>
+            </table>
+        </div>
+        <div t-attf-class="article o_report_layout_standard o_report_layout_background"
+             style="background-image: url(/erpharbor_account_hr/static/src/img/watermark.png) !important; background-size: 1000px !important; background-repeat: repeat-y !important; background-position-x: left !important;"
+             t-att-data-oe-model="doc and doc._name"
+             t-att-data-oe-id="doc and doc.id" t-att-data-oe-lang="doc and doc.env.context.get('lang')">
+            <div>
+                <!-- This div ensures that the address is not cropped by the header. -->
+                <t t-call="web.address_layout"/>
+            </div>
+            <t t-raw="0"/>
+        </div>
+        <div class="footer" style="margin-left:45px;margin-right:45px;">
+            <t t-call="erpharbor_account_hr.footer_address"/>
+        </div>
+    </template>
+</odoo>

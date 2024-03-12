@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+
+    <record id="hr_employee_template" model="mail.template">
+        <field name="name">Employee</field>
+        <field name="model_id" ref="hr.model_hr_employee"/>
+        <field name="subject">Birthday of "${object.name}"</field>
+        <field name="email_to">/</field>
+        <field name="body_html" type="html">
+            <p>
+                Hello team,<br/>
+                Today is "${object.name}"'s birthday.<br/>
+                Wishing him a great birthday and a memorable year.
+            </p>
+            <p> Thanks and regards, </p>
+        </field>
+    </record>
+
+    <record id="hr_attendance_template" model="mail.template">
+        <field name="name">Attendance Reminder Email</field>
+        <field name="model_id" ref="hr_attendance.model_hr_attendance"/>
+        <field name="auto_delete" eval="False"/>
+        <field name="email_to">${object.employee_id.work_email}</field>
+        <field name="subject">Attendance Reminder ${object.employee_id.name}</field>
+        <field name="body_html">
+        <![CDATA[
+        Hello ${object.employee_id.name},<br/>
+                This is reminder that you didn't sign out today.<br/>
+                Best regards...<br/>]]>
+        </field>
+    </record>
+
+</odoo>

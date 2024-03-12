@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<record id="college_fees_form_view" model="ir.ui.view">
+		<field name="name">college.fees.form</field>
+		<field name="model">college.fees</field>
+		<field name="arch" type="xml">
+			<form name="fees">
+				<sheet>
+					<div class="oe_title">
+						<h1>
+							<field name="name" readonly="1"/>
+						</h1>
+					</div>
+					<group>
+						<group>
+							<field name="student_id"/>
+							<field name="today_date"/>
+						</group>
+				</group>
+				<notebook>
+					<page string="College Fees">
+						<field name="fees_line_ids">
+							<tree editable="bottom">
+								<field name="name"/>
+								<field name="price" sum="price"/>
+								<field name="tax" sum="tax"/>
+								<field name="sub_total" sum="sub_total"/>
+							</tree>
+							<form>
+								<group>
+									<field name="name"/>
+									<field name="price" />
+									<field name="tax"/>
+									<field name="sub_total"/>
+								</group>
+							</form>
+						</field>
+					</page>
+				</notebook>
+				<group>
+					<field name="total_fees"/>
+					<field name="tax_amount"/>
+					<field name="total"/>
+				</group>
+				</sheet>
+			</form>
+		</field> 
+
+	</record>
+
+  
+    <record id="college_fees_tree_view" model="ir.ui.view">
+		<field name="name">college.fees.tree</field>
+		<field name="model">college.fees</field>
+		<field name="arch" type="xml">
+			<tree>
+				<field name="name"/>
+				<field name="student_id"/>
+				<field name="today_date"/>
+			</tree>
+		</field>
+	</record>
+
+
+
+
+	<record id="action_college_fees" model="ir.actions.act_window">
+        <field name="name">Fees</field>
+        <field name="res_model">college.fees</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+	
+
+	   <menuitem id="menu_college"
+	   	name = "College Management"/>
+
+
+	   	<menuitem id="menu_fees"
+	   		name="Fees"
+	   		parent="menu_college"
+	   		action="college_management.action_college_fees"/>
+
+</odoo>

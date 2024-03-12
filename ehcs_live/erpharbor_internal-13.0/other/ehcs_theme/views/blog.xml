@@ -1,0 +1,113 @@
+<odoo>
+	<template id="theme_menu_blog_two" name="website.blog_two">
+		<t t-call="website.layout">
+			<div id="wrap" class="oe_structure oe_empty">
+				<section class="bg-100 pt0 pb0 bg-100" data-name="Title"
+					style="">
+					<div class="container">
+						<div class="row s_nb_column_fixed">
+							<div class="col-lg-12 s_title pt16 pb16 bg-100"
+								style="text-align: center;">
+								<h1 class="s_title_default pb0 pt0">
+									<font style="font-size: 36px;">
+										<b style="">Blog</b>
+									</font>
+								</h1>
+							</div>
+						</div>
+					</div>
+					<!-- </section> -->
+					<div class="s_media_list bg-100 pb0 pt0 bg-100" style=""
+						data-name="Media List">
+						<div class="container">
+							<div class="row no-gutters">
+								<div class="col-lg-4 pb64 pt48 bg-100" style="">
+									<img class="img img-fluid"
+										src="/ehcs_theme/static/src/img/community.png" alt=""
+										data-original-title="" title=""
+										aria-describedby="tooltip906257" />
+								</div>
+								<div class="col-lg-8 s_media_list_body bg-100" style="">
+									<h3 style="background-color: rgb(248, 249, 250);">
+										<font style="font-size: 36px;">Features and News of Odoo 12</font>
+									</h3>
+									<span
+										class="s_badge badge bg-gamma o_default_snippet_text"
+										data-name="Badge">
+										<i class="fa fa-1x fa-fw fa-clock-o" />
+										3 months ago
+									</span>
+									<span
+										class="s_badge badge bg-gamma o_default_snippet_text"
+										data-name="Badge">
+										<i class="fa fa-1x fa-fw fa-user" />
+										by John DOE
+									</span>
+									<p>Once you select the multiple records in the tree view and
+										edit the value of field it will be popping up wizard and ask
+										that you want to apply the change in all selected records,
+										after confirming it will update the all selected
+										records.&amp;nbsp;</p>
+									<p>@ERPHarborCS #Odoonews #Odoov13 #OdooERP.</p>
+									<div class="s_btn text-left pb0 pt0" data-name="Buttons">
+										<a href="#">
+											Continue reading
+											<i class="fa fa-long-arrow-right align-middle ml-1" />
+										</a>
+									</div>
+									<div class="s_hr text-left pb32 pt24" data-name="Separator">
+										<hr class="s_hr_1px s_hr_solid border-600 w-100 mx-auto" />
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- </div> <section class="s_media_list pb24 bg-100 pt0" style="" 
+							data-name="Media List"> -->
+						<div class="container">
+							<div class="row no-gutters">
+								<div class="col-lg-4 pt48">
+									<img class="img img-fluid"
+										src="/ehcs_theme/static/src/img/entrprise.png" alt=""
+										data-original-title="" title=""
+										aria-describedby="tooltip645707" />
+								</div>
+								<div class="col-lg-8 s_media_list_body bg-100" style="">
+									<h3>
+										<font style="font-size: 36px;">Features and News of Odoo 13</font>
+									</h3>
+									<span
+										class="s_badge badge bg-gamma o_default_snippet_text"
+										data-name="Badge">
+										<i class="fa fa-1x fa-fw fa-clock-o" />
+										3 months ago
+									</span>
+									<span class="s_badge badge bg-gamma" data-name="Badge">
+										<i class="fa fa-1x fa-fw fa-user" />
+										by John DOE
+									</span>
+									<p>Once you select the multiple records in the tree view and
+										edit the value of field it will be popping up wizard and ask
+										that you want to apply the change in all selected records,
+										after confirming it will update the all selected records.
+									</p>
+									<p>@ERPHarborCS #Odoonews #Odoov13 #OdooERP.</p>
+									<div class="s_btn text-left pb0 pt0" data-name="Buttons">
+										<a href="#" class="o_default_snippet_text">
+											Continue reading
+											<i class="fa fa-long-arrow-right align-middle ml-1" />
+										</a>
+									</div>
+									<div class="s_hr text-left pt32 pb32" data-name="Separator">
+										<hr class="s_hr_1px s_hr_solid border-600 w-100 mx-auto" />
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-inner">
+						</div>
+					</div>
+				</section>
+			</div>
+		</t>
+	</template>
+</odoo>
